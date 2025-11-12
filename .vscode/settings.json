@@ -1,0 +1,36 @@
+{
+  // 🧹 Formatação automática ao salvar
+  "editor.formatOnSave": true,
+
+  // ✅ Usa o Prettier como formatador padrão
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 🪄 Faz o ESLint corrigir erros automaticamente ao salvar
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // ⚙️ Ignora arquivos de build
+  "files.exclude": {
+    "node_modules": true,
+    "dist": true,
+    "build": true
+  },
+
+  // 📘 Integrações com TypeScript e React
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  // 🧠 Opções de formatação Prettier
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+  "prettier.trailingComma": "es5",
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 100,
+  "prettier.endOfLine": "auto"
+}

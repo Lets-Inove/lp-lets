@@ -1,0 +1,57 @@
+import { generateSeoMetadata } from '@/components/SeoMetaData';
+import Header from '@/components/layout/Header';
+import HeroBanner from '@/components/sections/HeroBanner/HeroBanner';
+import { getTranslations } from 'next-intl/server';
+
+export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }) => {
+  const { locale } = await params;
+
+  return generateSeoMetadata({
+    locale,
+    namespace: 'HomePage',
+  });
+};
+
+export default async function HomePage() {
+  const t = await getTranslations('HomePage');
+
+  return (
+    <>
+      <Header />
+
+      <main>
+        <section id="home">
+          <HeroBanner />
+        </section>
+
+        {/* <section id="about">
+          <About />
+        </section>
+
+        <section id="how">
+          <HowWorks />
+        </section>
+
+        <section id="benefits">
+          <Benefits />
+        </section>
+
+        <section id="inspiration">
+          <InspirationText text={t("inspiration.text")} alt={t("inspiration.alt")} />
+        </section>
+
+        <section id="feedbacks">
+          <Feedback />
+        </section>
+
+        <section id="download">
+          <DownloadBanner />
+        </section> */}
+      </main>
+
+      {/* <footer id="contact">
+        <Footer />
+      </footer> */}
+    </>
+  );
+}
