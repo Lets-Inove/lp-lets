@@ -1,25 +1,25 @@
-"use client";
+'use client';
 
-import { DotLottiePlayer } from "@dotlottie/react-player";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useTranslations } from "next-intl";
-import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { DotLottiePlayer } from '@dotlottie/react-player';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+import { useEffect, useRef } from 'react';
 
 export default function HeroBanner() {
-  const t = useTranslations("HomePage");
+  const t = useTranslations('HomePage');
   const sectionRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start end", "end start"],
+    offset: ['start end', 'end start'],
   });
 
   const progress = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   useEffect(() => {
-    const unsubscribe = progress.on("change", (v) => {
+    const unsubscribe = progress.on('change', (v) => {
       const video = videoRef.current;
       if (video && video.duration) {
         video.currentTime = video.duration * v;
@@ -55,9 +55,9 @@ export default function HeroBanner() {
         autoplay
         loop
         style={{
-          width: "100%",
-          height: "100%",
-          position: "absolute",
+          width: '100%',
+          height: '100%',
+          position: 'absolute',
           zIndex: 0,
           opacity: 0.4,
         }}
@@ -72,7 +72,7 @@ export default function HeroBanner() {
             transition={{ duration: 0.8 }}
             className="font-open-sans text-2xl leading-tight font-semibold text-white md:text-3xl lg:text-5xl"
           >
-            {t("hero.title")}
+            {t('hero.title')}
           </motion.h2>
 
           <motion.p
@@ -81,7 +81,7 @@ export default function HeroBanner() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="mt-4 text-base text-white md:text-xl"
           >
-            {t("hero.subtitle")}
+            {t('hero.subtitle')}
           </motion.p>
         </div>
 

@@ -1,40 +1,40 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { ReactNode } from "react";
-import classNames from "classnames";
+import classNames from 'classnames';
+import Link from 'next/link';
+import { ReactNode } from 'react';
 
 interface GradientButtonProps {
   children: ReactNode;
   href?: string;
   className?: string;
-  as?: "button" | "link";
-  type?: "button" | "submit" | "reset";
+  as?: 'button' | 'link';
+  type?: 'button' | 'submit' | 'reset';
   onClick?: () => void;
-  variant?: "yellow" | "blueGreen";
+  variant?: 'yellow' | 'blueGreen';
 }
 
 export default function GradientButton({
   children,
   href,
   className,
-  as = "link",
-  type = "button",
+  as = 'link',
+  type = 'button',
   onClick,
-  variant = "blueGreen",
+  variant = 'blueGreen',
 }: GradientButtonProps) {
   const variantClass =
-    variant === "yellow"
-      ? "bg-[image:var(--gradient-yellow)] text-black"
-      : "bg-[image:var(--gradient-blue-green)] text-white";
+    variant === 'yellow'
+      ? 'bg-[image:var(--gradient-yellow)] text-black'
+      : 'bg-[image:var(--gradient-blue-green)] text-white';
 
   const baseClass = classNames(
-    "inline-block rounded-full px-6 py-3 text-sm font-bold uppercase text-center shadow-md transition-all duration-200",
+    'inline-block rounded-full px-6 py-3 text-sm font-bold uppercase text-center shadow-md transition-all duration-200',
     variantClass,
     className
   );
 
-  if (as === "button") {
+  if (as === 'button') {
     return (
       <button type={type} className={baseClass} onClick={onClick}>
         {children}
@@ -43,7 +43,7 @@ export default function GradientButton({
   }
 
   return (
-    <Link href={href || "#"} className={baseClass}>
+    <Link href={href || '#'} className={baseClass}>
       {children}
     </Link>
   );

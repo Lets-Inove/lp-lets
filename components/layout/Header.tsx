@@ -1,23 +1,23 @@
-"use client";
+'use client';
 
-import { useLocale, useTranslations } from "next-intl";
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useLocale, useTranslations } from 'next-intl';
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
+import { useEffect, useRef, useState } from 'react';
 
 const navItems = [
-  { key: "home", href: "#home" },
-  { key: "about", href: "#about" },
-  { key: "solutions", href: "#solutions" },
-  { key: "blog", href: "#blog" },
+  { key: 'home', href: '#home' },
+  { key: 'about', href: '#about' },
+  { key: 'solutions', href: '#solutions' },
+  { key: 'blog', href: '#blog' },
 ];
 
 const languages = [
-  { code: "pt", flag: "https://flagcdn.com/br.svg", label: "Português (BR)" },
-  { code: "pt-pt", flag: "https://flagcdn.com/pt.svg", label: "Português (PT)" },
-  { code: "en", flag: "https://flagcdn.com/us.svg", label: "English" },
-  { code: "es", flag: "https://flagcdn.com/es.svg", label: "Español" },
+  { code: 'pt', flag: 'https://flagcdn.com/br.svg', label: 'Português (BR)' },
+  { code: 'pt-pt', flag: 'https://flagcdn.com/pt.svg', label: 'Português (PT)' },
+  { code: 'en', flag: 'https://flagcdn.com/us.svg', label: 'English' },
+  { code: 'es', flag: 'https://flagcdn.com/es.svg', label: 'Español' },
 ];
 
 export default function Header() {
@@ -25,7 +25,7 @@ export default function Header() {
   const [langOpen, setLangOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
-  const t = useTranslations("Header");
+  const t = useTranslations('Header');
 
   const langRef = useRef<HTMLDivElement>(null);
 
@@ -34,9 +34,9 @@ export default function Header() {
   const currentLang = languages.find((l) => l.code === locale) || languages[0];
 
   const handleLanguageChange = (locale: string) => {
-    const segments = pathname.split("/").filter(Boolean);
+    const segments = pathname.split('/').filter(Boolean);
     segments[0] = locale;
-    router.push("/" + segments.join("/"));
+    router.push('/' + segments.join('/'));
     setLangOpen(false);
   };
 
@@ -47,8 +47,8 @@ export default function Header() {
         setLangOpen(false);
       }
     }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
   const handleScroll = (id: string) => {
@@ -65,7 +65,7 @@ export default function Header() {
       } else {
         window.scrollTo({
           top,
-          behavior: "smooth",
+          behavior: 'smooth',
         });
       }
     }
@@ -75,7 +75,7 @@ export default function Header() {
     <header className="top-0 z-50 bg-black shadow-sm">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <Link href="#home" onClick={() => handleScroll("#home")}>
+        <Link href="#home" onClick={() => handleScroll('#home')}>
           <Image src="/svg/logo.svg" alt="Lets Inove" width={70} height={40} />
         </Link>
 
@@ -90,7 +90,10 @@ export default function Header() {
               {t(item.key)}
             </button>
           ))}
-          <button className="rounded-full bg-violet-500 px-4 py-2">Quero meu site</button>
+          <button className="bg-violet-normal hover:bg-violet-normal-hover cursor-pointer rounded-full px-4 py-2 transition duration-300 ease-out hover:scale-110">
+            {' '}
+            Quero meu site
+          </button>
         </nav>
 
         {/* <div className="relative flex items-center gap-4">

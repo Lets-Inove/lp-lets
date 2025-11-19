@@ -1,28 +1,28 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { useTranslations } from "next-intl";
-import StepCard from "@/components/ui/StepCard";
-import "keen-slider/keen-slider.css";
-import { useKeenSlider } from "keen-slider/react";
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { useIsDesktop } from "@/utils/useIsDesktop";
+import SquareCardAdapted from '@/components/ui/SquareCardLong';
+import { useIsDesktop } from '@/utils/useIsDesktop';
+import { DotLottiePlayer } from '@dotlottie/react-player';
+import { motion } from 'framer-motion';
+import 'keen-slider/keen-slider.css';
+import { useKeenSlider } from 'keen-slider/react';
+import { useTranslations } from 'next-intl';
+import { useState } from 'react';
 
 export default function HowWorks() {
-  const t = useTranslations("HomePage.how");
+  const t = useTranslations('HomePage.how');
   const isDesktop = useIsDesktop();
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
-    loop: false,
-    mode: "snap",
+    loop: true,
+    mode: 'snap',
     slides: {
       perView: 1,
       spacing: 16,
     },
     breakpoints: {
-      "(min-width: 768px)": {
+      '(min-width: 1024px)': {
         slides: { perView: 3, spacing: 24 },
       },
     },
@@ -32,42 +32,45 @@ export default function HowWorks() {
   });
 
   // Componente condicional
-  const SlideWrapper = isDesktop ? motion.div : "div";
+  const SlideWrapper = isDesktop ? motion.div : 'div';
 
   return (
-    <section className="-10 relative w-full py-48 text-white">
-      {/* Background Image */}
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src="/images/banner-works.png"
-          alt="Estádio cheio"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="bg-blue-darker/40 absolute inset-0" />
-      </div>
-
+    <section className="relative w-full py-12 text-white before:absolute before:top-0 before:right-0 before:h-full before:w-[600px] before:bg-[url('/images/bg-howorks.png')] before:bg-contain before:bg-right before:bg-no-repeat before:opacity-40 before:grayscale">
+      <DotLottiePlayer
+        src="/animations/particles_4.lottie"
+        autoplay
+        loop
+        style={{
+          width: '100%',
+          height: '100%',
+          position: 'absolute',
+          left: -250,
+          zIndex: 0,
+          opacity: 0.1,
+        }}
+      />
       {/* Content */}
       <div className="mx-auto flex w-full flex-col items-center justify-center gap-20">
         <motion.div
-          className="space-y-4 text-center"
+          className="container flex items-center justify-start space-y-4 text-start"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-extrabold text-white md:text-3xl lg:text-6xl">
-            <span className="border-yellow-normal inline-block border-b-4 pb-1">{t("title")}</span>
+          <h2 className="font-open-sans max-w-[682px] text-3xl font-semibold text-white md:text-3xl lg:text-6xl">
+            <span className="inline-block pb-1">{t('title')}</span>
           </h2>
-          <p className="text-3xl">{t("subtitle")}</p>
         </motion.div>
 
         {/* Steps → vira slider no mobile */}
-        <div className="w-full max-w-6xl px-4">
-          <div ref={sliderRef} className="keen-slider">
+        <div className="flex w-full flex-col items-center justify-center px-4 lg:px-0">
+          <div
+            ref={sliderRef}
+            className="keen-slider container flex w-full items-center justify-between"
+          >
             <SlideWrapper
-              className="keen-slider__slide"
+              className="keen-slider__slide flex h-full items-stretch justify-center py-8"
               {...(isDesktop && {
                 initial: { opacity: 0, y: 40 },
                 whileInView: { opacity: 1, y: 0 },
@@ -75,22 +78,16 @@ export default function HowWorks() {
                 viewport: { once: true },
               })}
             >
-              <StepCard
-                icon={
-                  <Image
-                    src="/svg/football-player-icon.svg"
-                    alt={t("steps.step1.alt")}
-                    width={40}
-                    height={40}
-                  />
-                }
-                title={t("steps.step1.title")}
-                description={t("steps.step1.description")}
+              <SquareCardAdapted
+                iconSrc="/svg/code.svg"
+                iconAlt="Checklist Icon"
+                title="1. Planejamento e Estratégia"
+                description="Nossa equipe especializada coleta as necessidades e características do seu negócio para criar a solução ideal."
               />
             </SlideWrapper>
 
             <SlideWrapper
-              className="keen-slider__slide"
+              className="keen-slider__slide flex h-full items-stretch justify-center py-8"
               {...(isDesktop && {
                 initial: { opacity: 0, y: 40 },
                 whileInView: { opacity: 1, y: 0 },
@@ -98,22 +95,16 @@ export default function HowWorks() {
                 viewport: { once: true },
               })}
             >
-              <StepCard
-                icon={
-                  <Image
-                    src="/svg/geo-icon.svg"
-                    alt={t("steps.step2.alt")}
-                    width={40}
-                    height={40}
-                  />
-                }
-                title={t("steps.step2.title")}
-                description={t("steps.step2.description")}
+              <SquareCardAdapted
+                iconSrc="/svg/report-icon.svg"
+                iconAlt="Checklist Icon"
+                title="2. Desenvolvimento Personalizado"
+                description="Criamos seu sistema sob medida, utilizando tecnologias modernas para garantir segurança e desempenho. Durante essa etapa, você pode solicitar ajustes e melhorias."
               />
             </SlideWrapper>
 
             <SlideWrapper
-              className="keen-slider__slide"
+              className="keen-slider__slide flex h-full items-stretch justify-center py-8"
               {...(isDesktop && {
                 initial: { opacity: 0, y: 40 },
                 whileInView: { opacity: 1, y: 0 },
@@ -121,29 +112,23 @@ export default function HowWorks() {
                 viewport: { once: true },
               })}
             >
-              <StepCard
-                icon={
-                  <Image
-                    src="/svg/christmas-stars-icon.svg"
-                    alt={t("steps.step3.alt")}
-                    width={40}
-                    height={40}
-                  />
-                }
-                title={t("steps.step3.title")}
-                description={t("steps.step3.description")}
+              <SquareCardAdapted
+                iconSrc="/svg/support.svg"
+                iconAlt="Checklist Icon"
+                title=" 3. Entrega e Suporte"
+                description="Seu sistema será entregue com todas as funcionalidades e possibilidade de manutenção mensal para evoluir conforme suas necessidades."
               />
             </SlideWrapper>
           </div>
 
           {/* Bullets */}
-          <div className="mt-6 flex justify-center gap-3 md:hidden">
+          <div className="mt-6 flex justify-center gap-3 lg:hidden">
             {[...Array(instanceRef.current?.track.details.slides.length || 0)].map((_, idx) => (
               <button
                 key={idx}
                 onClick={() => instanceRef.current?.moveToIdx(idx)}
                 className={`h-3 w-3 rounded-full transition ${
-                  currentSlide === idx ? "bg-yellow-400" : "bg-gray-300/50"
+                  currentSlide === idx ? 'bg-violet-dark' : 'bg-gray-300/50'
                 }`}
                 aria-label={`Ir para slide ${idx + 1}`}
               />

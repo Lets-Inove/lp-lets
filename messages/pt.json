@@ -19,12 +19,12 @@
       "call": "Participe de eventos esportivos de forma única: escolha seu assento, faça parte de mosaicos coletivos e interaja com outros torcedores."
     },
     "about": {
-      "title": "SOBRE O APP:",
-      "text": "O Up é uma plataforma pioneira que organiza e potencializa a experiência da torcida dentro do estádio. Mais do que assistir ao jogo, cada torcedor passa a ser parte de uma obra coletiva: mosaicos que ganham vida com a luz da lanterna ou da tela do celular, tudo sincronizado em tempo real.",
+      "title": "Tecnologia e inteligência unidas para impulsionar o seu negócio.",
+      "text": "Somos uma empresa especializada em soluções tecnológicas, utilizando as mais avançadas linguagens e ferramentas de programação para criar sistemas escaláveis e adaptados às necessidades de cada projeto.",
       "imageAlt": "Torcedor no estádio com mosaico"
     },
     "how": {
-      "title": "COMO FUNCIONA:",
+      "title": "Como funciona o desenvolvimento?",
       "subtitle": "Três passos simples para fazer parte do espetáculo",
       "steps": {
         "step1": {
@@ -45,33 +45,38 @@
       }
     },
     "benefits": {
-      "title": "BENEFÍCIOS E DIFERENCIAIS:",
-      "subtitle": "Descubra por que o Up é único no mundo esportivo",
+      "title": "Você já tem um sistema de gestão eficiente?",
+      "subtitle": "A gestão empresarial é fundamental para o crescimento e sucesso do seu negócio. Com a LetsInove, você tem um sistema intuitivo, seguro e acessível de qualquer dispositivo, garantindo controle total sobre suas operações.",
       "cards": {
         "card1": {
-          "title": "Mosaicos automáticos e sincronizados",
-          "description": "Tudo organizado pelo app, sem papel, sem erro, sem esforço.",
-          "alt": "Ícone de mosaico sincronizado"
+          "title": "Gestão Integrada",
+          "description": "Controle de vendas, estoque e equipe em um só lugar.",
+          "alt": "gestao"
         },
         "card2": {
-          "title": "Tecnologia de geolocalização",
-          "description": "Cada torcedor é identificado em seu assento e faz parte do espetáculo.",
-          "alt": "Ícone de geolocalização no estádio"
+          "title": "Gestão Integrada",
+          "description": "Controle de vendas, estoque e equipe em um só lugar.",
+          "alt": "gestao"
         },
         "card3": {
-          "title": "Rede social integrada",
-          "description": "Compartilhe fotos e vídeos, poste momentos e até publique direto no Instagram.",
-          "alt": "Ícone de rede social"
+          "title": "Gestão Integrada",
+          "description": "Controle de vendas, estoque e equipe em um só lugar.",
+          "alt": "gestao"
         },
         "card4": {
-          "title": "Oportunidades para patrocinadores",
-          "description": "Espaços de publicidade e ativações exclusivas dentro do app.",
-          "alt": "Ícone de marketing"
+          "title": "Gestão Integrada",
+          "description": "Controle de vendas, estoque e equipe em um só lugar.",
+          "alt": "gestao"
         },
         "card5": {
-          "title": "Inovação e pioneirismo",
-          "description": "Primeira solução a unir experiência coletiva, redes sociais e dados de torcida em uma só plataforma.",
-          "alt": "Ícone de inovação"
+          "title": "Gestão Integrada",
+          "description": "Controle de vendas, estoque e equipe em um só lugar.",
+          "alt": "gestao"
+        },
+        "card6": {
+          "title": "Gestão Integrada",
+          "description": "Controle de vendas, estoque e equipe em um só lugar.",
+          "alt": "gestao"
         }
       },
       "cta": "Baixar Agora"

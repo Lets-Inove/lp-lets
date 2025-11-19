@@ -1,6 +1,11 @@
 import { generateSeoMetadata } from '@/components/SeoMetaData';
+import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
+import About from '@/components/sections/About/About';
+import Benefits from '@/components/sections/Benefits.tsx/Benefits';
 import HeroBanner from '@/components/sections/HeroBanner/HeroBanner';
+import HowWorks from '@/components/sections/HowWorks/HowWorks';
+import InspirationText from '@/components/sections/InspirationText/InspirationText';
 import { getTranslations } from 'next-intl/server';
 
 export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }) => {
@@ -24,23 +29,21 @@ export default async function HomePage() {
           <HeroBanner />
         </section>
 
-        {/* <section id="about">
+        <section id="about">
           <About />
         </section>
-
-        <section id="how">
-          <HowWorks />
-        </section>
-
         <section id="benefits">
           <Benefits />
         </section>
 
+        <section id="solutions">
+          <HowWorks />
+        </section>
         <section id="inspiration">
-          <InspirationText text={t("inspiration.text")} alt={t("inspiration.alt")} />
+          <InspirationText />
         </section>
 
-        <section id="feedbacks">
+        {/* <section id="feedbacks">
           <Feedback />
         </section>
 
@@ -49,9 +52,9 @@ export default async function HomePage() {
         </section> */}
       </main>
 
-      {/* <footer id="contact">
+      <footer id="contact">
         <Footer />
-      </footer> */}
+      </footer>
     </>
   );
 }
