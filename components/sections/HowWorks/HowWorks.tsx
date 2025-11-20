@@ -52,7 +52,7 @@ export default function HowWorks() {
       {/* Content */}
       <div className="mx-auto flex w-full flex-col items-center justify-center gap-20">
         <motion.div
-          className="container flex items-center justify-start space-y-4 text-start"
+          className="container flex items-center justify-start space-y-4 px-5 text-start md:px-0"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
@@ -80,9 +80,9 @@ export default function HowWorks() {
             >
               <SquareCardAdapted
                 iconSrc="/svg/code.svg"
-                iconAlt="Checklist Icon"
-                title="1. Planejamento e Estratégia"
-                description="Nossa equipe especializada coleta as necessidades e características do seu negócio para criar a solução ideal."
+                iconAlt={t('steps.step1.alt')}
+                title={t('steps.step1.title')}
+                description={t('steps.step1.description')}
               />
             </SlideWrapper>
 
@@ -97,9 +97,9 @@ export default function HowWorks() {
             >
               <SquareCardAdapted
                 iconSrc="/svg/report-icon.svg"
-                iconAlt="Checklist Icon"
-                title="2. Desenvolvimento Personalizado"
-                description="Criamos seu sistema sob medida, utilizando tecnologias modernas para garantir segurança e desempenho. Durante essa etapa, você pode solicitar ajustes e melhorias."
+                iconAlt={t('steps.step2.alt')}
+                title={t('steps.step2.title')}
+                description={t('steps.step2.description')}
               />
             </SlideWrapper>
 
@@ -114,9 +114,9 @@ export default function HowWorks() {
             >
               <SquareCardAdapted
                 iconSrc="/svg/support.svg"
-                iconAlt="Checklist Icon"
-                title=" 3. Entrega e Suporte"
-                description="Seu sistema será entregue com todas as funcionalidades e possibilidade de manutenção mensal para evoluir conforme suas necessidades."
+                iconAlt={t('steps.step3.alt')}
+                title={t('steps.step3.title')}
+                description={t('steps.step3.description')}
               />
             </SlideWrapper>
           </div>

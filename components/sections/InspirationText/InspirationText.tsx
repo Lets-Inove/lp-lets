@@ -3,8 +3,11 @@
 import BannerCenter from '@/components/ui/BannerCenter';
 import Button from '@/components/ui/Button';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 export default function InspirationText() {
+  const t = useTranslations('HomePage.inspiration');
+
   return (
     <motion.section
       initial={{ opacity: 0, y: 60 }}
@@ -38,12 +41,11 @@ export default function InspirationText() {
           className="flex w-full max-w-[1440px] flex-col items-center justify-center gap-10 text-center"
         >
           <h2 className="font-open-sans text-4xl leading-tight font-semibold sm:text-5xl md:text-6xl lg:text-7xl">
-            Pronto para revolucionar sua empresa?
+            {t('title')}
           </h2>
 
           <p className="font-open-sans max-w-[1109px] text-lg font-semibold sm:text-xl">
-            Não fique para trás! Adote a tecnologia para otimizar processos, reduzir custos e
-            maximizar seus lucros. Nossa equipe está pronta para ajudar sua empresa a crescer!
+            {t('subtitle')}{' '}
           </p>
 
           <motion.div
@@ -52,7 +54,7 @@ export default function InspirationText() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7, delay: 0.45, ease: 'easeOut' }}
           >
-            <Button text="Começar agora" />
+            <Button text={t('btn')} />
           </motion.div>
         </motion.div>
       </div>

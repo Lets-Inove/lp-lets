@@ -7,40 +7,37 @@
   },
   "HomePage": {
     "seo": {
-      "title": "Bem-vindo ao Up Connections",
-      "description": "Conectando ideias e pessoas para soluções reais"
+      "title": "Bem-vindo a LetsInove",
+      "description": "Soluções em tecnologia para sua empresa"
     },
-    "title": "Bem-vindo ao Up Connections",
-    "description": "Conectando ideias e pessoas para soluções reais",
+    "title": "Bem-vindo a LetsInove",
+    "description": "Soluções em tecnologia para sua empresa",
     "hero": {
       "title": "Soluções em Tecnologia para sua empresa",
-      "subtitle": "Em um mercado cada vez mais competitivo, é essencial estar preparado. Um gerenciamento eficaz permite otimizar tempo e trabalho, garantindo melhores resultados.",
-      "cta": "CONHECER AGORA",
-      "call": "Participe de eventos esportivos de forma única: escolha seu assento, faça parte de mosaicos coletivos e interaja com outros torcedores."
+      "subtitle": "Em um mercado cada vez mais competitivo, é essencial estar preparado. Um gerenciamento eficaz permite otimizar tempo e trabalho, garantindo melhores resultados."
     },
     "about": {
       "title": "Tecnologia e inteligência unidas para impulsionar o seu negócio.",
       "text": "Somos uma empresa especializada em soluções tecnológicas, utilizando as mais avançadas linguagens e ferramentas de programação para criar sistemas escaláveis e adaptados às necessidades de cada projeto.",
-      "imageAlt": "Torcedor no estádio com mosaico"
+      "imageAlt": "orbe de fios"
     },
     "how": {
       "title": "Como funciona o desenvolvimento?",
-      "subtitle": "Três passos simples para fazer parte do espetáculo",
       "steps": {
         "step1": {
-          "title": "1. Detectamos sua presença no estádio",
-          "description": "Geolocalização confirma onde você está sentado.",
-          "alt": "Ícone de jogador de futebol"
+          "title": "1. Planejamento e Estratégia",
+          "description": "Nossa equipe especializada coleta as necessidades e características do seu negócio para criar a solução ideal.",
+          "alt": "Ícone de código"
         },
         "step2": {
-          "title": "2. Sincronizamos sua posição ao mosaico",
-          "description": "O app calcula exatamente quando seu celular deve acender.",
-          "alt": "Ícone de geolocalização"
+          "title": "2. Desenvolvimento Personalizado",
+          "description": "Criamos seu sistema sob medida, utilizando tecnologias modernas para garantir segurança e desempenho. Durante essa etapa, você pode solicitar ajustes e melhorias.",
+          "alt": "Ícone de prancheta"
         },
         "step3": {
-          "title": "3. A arquibancada vira um espetáculo",
-          "description": "Cada torcedor contribui para formar o desenho, nome do time ou mensagem coletiva.",
-          "alt": "Ícone de estrelas em celebração"
+          "title": "3. Entrega e Suporte",
+          "description": "Seu sistema será entregue com todas as funcionalidades e possibilidade de manutenção mensal para evoluir conforme suas necessidades.",
+          "alt": "Ícone de fone"
         }
       }
     },
@@ -82,8 +79,9 @@
       "cta": "Baixar Agora"
     },
     "inspiration": {
-      "text": "MILHARES DE VOZES, UMA SÓ LUZ: A FORÇA DA TORCIDA CONECTADA.",
-      "alt": "Ícone bola de futebol"
+      "title": "Pronto para revolucionar sua empresa?",
+      "subtitle": "Não fique para trás! Adote a tecnologia para otimizar processos, reduzir custos e maximizar seus lucros. Nossa equipe está pronta para ajudar sua empresa a crescer!",
+      "btn": "Começar agora"
     },
     "feedbacks": {
       "backgroundAlt": "Estádio de fundo",
@@ -130,20 +128,20 @@
       "button": "ENVIAR"
     },
     "contact": {
-      "title": "Contato"
+      "title": "Contato",
+      "subtitle": "Ainda ficou com alguma dúvida?"
     },
     "links": {
-      "title": "Links Úteis",
+      "title": "Links Rápidos",
       "home": "Home",
-      "about": "Sobre",
-      "how": "Como Funciona",
-      "benefits": "Benefícios",
-      "feedbacks": "Feedbacks",
-      "contact": "Contato"
+      "about": "Sobre Nós",
+      "solutions": "Soluções",
+      "blog": "blog",
+      "want": "Quero meu site"
     },
     "social": {
-      "title": "Social Mídia"
+      "title": "Redes Sociais"
     },
-    "rights": "Conectando Torcidas, Criando Memórias. – Todos os direitos reservados."
+    "rights": "Todos os direitos reservados. - 00.000.000/0000-00"
   }
 }

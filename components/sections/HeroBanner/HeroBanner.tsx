@@ -79,7 +79,7 @@ export default function HeroBanner() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="mt-4 text-base text-white md:text-xl"
+            className="mt-4 px-5 text-base text-white md:px-0 md:text-xl"
           >
             {t('hero.subtitle')}
           </motion.p>
