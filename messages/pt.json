@@ -160,7 +160,10 @@
     "about": {
       "text-one": "Na LetsInove, a qualidade vem sempre em primeiro lugar – no produto, no atendimento e nos processos. Compreendemos as dores e preocupações dos nossos clientes, especialmente daqueles que já enfrentaram desafios ao trabalhar com empresas que não oferecem o suporte adequado no momento certo.",
       "text-two": "Nossa equipe está preparada para agir com eficiência em qualquer situação, garantindo tranquilidade e confiança. Além disso, contamos com expertise nas mais avançadas tecnologias do mercado, entregando sempre as melhores soluções para o seu negócio.",
-      "imageAlt": "imagem"
+      "imageAlt": "imagem",
+      "inspirationTitle": "Tem um projeto em mente?",
+      "inspirationText": "Conte com a gente! Temos a melhor equipe técnica para te ajudar nesse novo projeto!",
+      "btn": "Fale conosco"
     }
   }
 }

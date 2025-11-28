@@ -60,11 +60,11 @@ export default function About() {
           className="flex w-full max-w-[1440px] flex-col items-center justify-center gap-10 text-center text-white"
         >
           <h2 className="font-open-sans px-5 text-4xl leading-tight font-semibold sm:text-5xl lg:text-6xl">
-            Tem um projeto em mente?
+            {t('inspirationTitle')}
           </h2>
 
           <p className="font-open-sans max-w-[1109px] px-5 text-lg font-semibold">
-            Conte com a gente! Temos a melhor equipe técnica para te ajudar nesse novo projeto!
+            {t('inspirationText')}
           </p>
 
           <motion.div
@@ -73,7 +73,7 @@ export default function About() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7, delay: 0.45, ease: 'easeOut' }}
           >
-            <Button text={'Fale conosco'} />
+            <Button text={t('btn')} />
           </motion.div>
         </motion.div>
       </div>
