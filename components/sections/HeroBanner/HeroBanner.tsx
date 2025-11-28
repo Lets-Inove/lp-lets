@@ -1,32 +1,56 @@
 'use client';
 
 import { DotLottiePlayer } from '@dotlottie/react-player';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function HeroBanner() {
   const t = useTranslations('HomePage');
   const sectionRef = useRef<HTMLDivElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const videoA = useRef<HTMLVideoElement>(null);
+  const videoB = useRef<HTMLVideoElement>(null);
 
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ['start end', 'end start'],
-  });
+  const playlist = ['/animations/dna-looping.mp4', '/animations/dna-looping-reverse.mp4'];
 
-  const progress = useTransform(scrollYProgress, [0, 1], [0, 1]);
+  const [index, setIndex] = useState(0);
+  const [active, setActive] = useState<'A' | 'B'>('A');
 
   useEffect(() => {
-    const unsubscribe = progress.on('change', (v) => {
-      const video = videoRef.current;
-      if (video && video.duration) {
-        video.currentTime = video.duration * v;
-      }
-    });
-    return () => unsubscribe();
-  }, [progress]);
+    const currentVideo = active === 'A' ? videoA.current : videoB.current;
+
+    if (!currentVideo) return;
+
+    const handleEnded = () => {
+      const nextIndex = (index + 1) % playlist.length;
+      setIndex(nextIndex);
+
+      const nextVideo = active === 'A' ? videoB.current : videoA.current;
+      if (!nextVideo) return;
+
+      // prepara o próximo vídeo
+      nextVideo.src = playlist[nextIndex];
+
+      nextVideo.onloadeddata = () => {
+        nextVideo.play();
+
+        // faz crossfade
+        if (active === 'A') {
+          videoA.current!.style.opacity = '0';
+          videoB.current!.style.opacity = '1';
+          setActive('B');
+        } else {
+          videoB.current!.style.opacity = '0';
+          videoA.current!.style.opacity = '1';
+          setActive('A');
+        }
+      };
+    };
+
+    currentVideo.addEventListener('ended', handleEnded);
+    return () => currentVideo.removeEventListener('ended', handleEnded);
+  }, [index, active]);
 
   return (
     <section
@@ -36,13 +60,21 @@ export default function HeroBanner() {
       {/* Vídeo de fundo */}
       <div className="absolute inset-0 -z-10">
         <video
-          // ref={videoRef}
-          src="/animations/dna-looping.mp4"
-          className="h-full w-full object-cover"
-          preload="auto"
+          ref={videoA}
+          src={playlist[0]}
+          className="absolute inset-0 h-full w-full object-cover transition-opacity duration-700"
           autoPlay
-          loop
           muted
+          preload="auto"
+          style={{ opacity: 1 }}
+        />
+        <video
+          ref={videoB}
+          className="absolute inset-0 h-full w-full object-cover transition-opacity duration-700"
+          autoPlay
+          muted
+          preload="auto"
+          style={{ opacity: 0 }}
         />
 
         {/* Overlay sutil para legibilidade do texto */}

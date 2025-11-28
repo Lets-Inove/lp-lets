@@ -40,7 +40,7 @@ export default function InspirationText() {
           transition={{ duration: 0.8, delay: 0.35, ease: 'easeOut' }}
           className="flex w-full max-w-[1440px] flex-col items-center justify-center gap-10 text-center"
         >
-          <h2 className="font-open-sans text-4xl leading-tight font-semibold sm:text-5xl md:text-6xl lg:text-7xl">
+          <h2 className="font-open-sans text-4xl leading-tight font-semibold sm:text-5xl lg:text-6xl">
             {t('title')}
           </h2>
 

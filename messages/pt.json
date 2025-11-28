@@ -143,5 +143,24 @@
       "title": "Redes Sociais"
     },
     "rights": "Todos os direitos reservados. - 00.000.000/0000-00"
+  },
+  "About": {
+    "seo": {
+      "title": "Sobre a LetsInove",
+      "description": "Saiba mais sobre a LetsInove"
+    },
+    "title": "Sobre a LetsInove",
+    "description": "Saiba mais sobre a LetsInove",
+    "hero": {
+      "title": "Sobre Nós",
+      "subtitle": "A LetsInove Web Solutions é uma empresa de tecnologia especializada no desenvolvimento de sistemas personalizados e soluções web para otimizar a gestão empresarial.",
+      "subtitle-two": "Combinamos design moderno, usabilidade e segurança para entregar a melhor experiência aos nossos clientes.",
+      "btn": "Falar com um espeacialista"
+    },
+    "about": {
+      "text-one": "Na LetsInove, a qualidade vem sempre em primeiro lugar – no produto, no atendimento e nos processos. Compreendemos as dores e preocupações dos nossos clientes, especialmente daqueles que já enfrentaram desafios ao trabalhar com empresas que não oferecem o suporte adequado no momento certo.",
+      "text-two": "Nossa equipe está preparada para agir com eficiência em qualquer situação, garantindo tranquilidade e confiança. Além disso, contamos com expertise nas mais avançadas tecnologias do mercado, entregando sempre as melhores soluções para o seu negócio.",
+      "imageAlt": "imagem"
+    }
   }
 }
