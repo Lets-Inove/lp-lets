@@ -69,7 +69,7 @@ export default function About() {
             </p>
 
             <Button
-              text="Quero meu sistema"
+              text={t('btn')}
               className="mt-4 max-w-[220px] cursor-pointer"
               onClick={() => alert('Clicou!')}
             />

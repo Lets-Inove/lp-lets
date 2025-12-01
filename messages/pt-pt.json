@@ -1,148 +1,153 @@
 {
   "Header": {
     "home": "Início",
-    "about": "Sobre",
-    "how": "Como Funciona",
-    "benefits": "Benefícios",
-    "feedbacks": "Testemunhos",
-    "contact": "Contacto",
-    "download": "Descarregar Agora",
-    "language": "Idioma"
+    "about": "Sobre nós",
+    "solutions": "Soluções",
+    "domain": "Dominios",
+    "mySite": "Quero meu site"
   },
   "HomePage": {
     "seo": {
-      "title": "Bem-vindo ao Up Connections",
-      "description": "A ligar ideias e pessoas para soluções reais"
+      "title": "Bem-vindo à LetsInove",
+      "description": "Soluções em tecnologia para a sua empresa"
     },
-    "title": "Bem-vindo ao Up Connections",
-    "description": "A ligar ideias e pessoas para soluções reais",
+    "title": "Bem-vindo à LetsInove",
+    "description": "Soluções em tecnologia para a sua empresa",
     "hero": {
-      "title": "TRANSFORME A EXPERIÊNCIA NO ESTÁDIO:",
-      "subtitle": "sinta a emoção dos adeptos como nunca antes.",
-      "cta": "DESCOBRIR AGORA",
-      "call": "Participe em eventos desportivos de forma única: escolha o seu lugar, faça parte de mosaicos coletivos e interaja com outros adeptos."
+      "title": "Soluções Tecnológicas para a sua empresa",
+      "subtitle": "Num mercado cada vez mais competitivo, é essencial estar preparado. Uma gestão eficaz permite otimizar tempo e trabalho, garantindo melhores resultados."
     },
     "about": {
-      "title": "SOBRE A APP:",
-      "text": "O Up é uma plataforma pioneira que organiza e potencia a experiência dos adeptos dentro do estádio. Mais do que assistir ao jogo, cada adepto torna-se parte de uma obra coletiva: mosaicos que ganham vida com a luz da lanterna ou do ecrã do telemóvel, tudo sincronizado em tempo real.",
-      "imageAlt": "Adepto no estádio com mosaico"
+      "title": "Tecnologia e inteligência unidas para impulsionar o seu negócio.",
+      "text": "Somos uma empresa especializada em soluções tecnológicas, utilizando as mais avançadas linguagens e ferramentas de programação para criar sistemas escaláveis e adaptados às necessidades de cada projeto.",
+      "imageAlt": "orbe de fios",
+      "btn": "Quero meu sistema"
     },
     "how": {
-      "title": "COMO FUNCIONA:",
-      "subtitle": "Três passos simples para fazer parte do espetáculo",
+      "title": "Como funciona o desenvolvimento?",
       "steps": {
         "step1": {
-          "title": "1. Detetamos a sua presença no estádio",
-          "description": "A geolocalização confirma onde está sentado.",
-          "alt": "Ícone de jogador de futebol"
+          "title": "1. Planeamento e Estratégia",
+          "description": "A nossa equipa especializada recolhe as necessidades e características do seu negócio para criar a solução ideal.",
+          "alt": "Ícone de código"
         },
         "step2": {
-          "title": "2. Sincronizamos a sua posição com o mosaico",
-          "description": "A app calcula exatamente quando o seu telemóvel deve acender.",
-          "alt": "Ícone de geolocalização"
+          "title": "2. Desenvolvimento Personalizado",
+          "description": "Criamos o seu sistema à medida, utilizando tecnologias modernas para garantir segurança e desempenho. Durante esta etapa, pode solicitar ajustes e melhorias.",
+          "alt": "Ícone de prancheta"
         },
         "step3": {
-          "title": "3. A bancada torna-se um espetáculo",
-          "description": "Cada adepto contribui para formar o desenho, nome da equipa ou mensagem coletiva.",
-          "alt": "Ícone de estrelas em celebração"
+          "title": "3. Entrega e Suporte",
+          "description": "O seu sistema será entregue com todas as funcionalidades e possibilidade de manutenção mensal para evoluir conforme as suas necessidades.",
+          "alt": "Ícone de auscultador"
         }
       }
     },
     "benefits": {
-      "title": "BENEFÍCIOS E DIFERENCIAIS:",
-      "subtitle": "Descubra porque o Up é único no mundo desportivo",
+      "title": "Já tem um sistema de gestão eficiente?",
+      "subtitle": "A gestão empresarial é fundamental para o crescimento e sucesso do seu negócio. Com a LetsInove, tem um sistema intuitivo, seguro e acessível a partir de qualquer dispositivo, garantindo controlo total sobre as suas operações.",
       "cards": {
         "card1": {
-          "title": "Mosaicos automáticos e sincronizados",
-          "description": "Tudo organizado pela app, sem papel, sem erros, sem esforço.",
-          "alt": "Ícone de mosaico sincronizado"
+          "title": "Gestão Integrada",
+          "description": "Controlo de vendas, stock e equipa num só lugar.",
+          "alt": "gestao"
         },
         "card2": {
-          "title": "Tecnologia de geolocalização",
-          "description": "Cada adepto é identificado no seu lugar e faz parte do espetáculo.",
-          "alt": "Ícone de geolocalização no estádio"
+          "title": "Gestão Integrada",
+          "description": "Controlo de vendas, stock e equipa num só lugar.",
+          "alt": "gestao"
         },
         "card3": {
-          "title": "Rede social integrada",
-          "description": "Partilhe fotos e vídeos, publique momentos e até diretamente no Instagram.",
-          "alt": "Ícone de rede social"
+          "title": "Gestão Integrada",
+          "description": "Controlo de vendas, stock e equipa num só lugar.",
+          "alt": "gestao"
         },
         "card4": {
-          "title": "Oportunidades para patrocinadores",
-          "description": "Espaços publicitários e ativações exclusivas dentro da app.",
-          "alt": "Ícone de marketing"
+          "title": "Gestão Integrada",
+          "description": "Controlo de vendas, stock e equipa num só lugar.",
+          "alt": "gestao"
         },
         "card5": {
-          "title": "Inovação e espírito pioneiro",
-          "description": "Primeira solução a unir experiência coletiva, redes sociais e dados de adeptos numa só plataforma.",
-          "alt": "Ícone de inovação"
+          "title": "Gestão Integrada",
+          "description": "Controlo de vendas, stock e equipa num só lugar.",
+          "alt": "gestao"
+        },
+        "card6": {
+          "title": "Gestão Integrada",
+          "description": "Controlo de vendas, stock e equipa num só lugar.",
+          "alt": "gestao"
         }
       },
       "cta": "Descarregar Agora"
     },
     "inspiration": {
-      "text": "MILHARES DE VOZES, UMA SÓ LUZ: A FORÇA DOS ADEPTOS UNIDOS.",
-      "alt": "Ícone de bola de futebol"
-    },
-    "feedbacks": {
-      "backgroundAlt": "Fundo do estádio",
-      "title": "TESTEMUNHOS:",
-      "subtitle": "O que dizem os nossos utilizadores",
-      "cards": {
-        "card1": {
-          "name": "Lucas Andrade",
-          "role": "Adepto Apaixonado",
-          "feedback": "Nunca pensei que o meu telemóvel pudesse fazer parte da festa no estádio. Quando vi o mosaico a ganhar forma, senti que fazia parte de algo maior. Foi emocionante participar nesta experiência coletiva.",
-          "altAvatar": "Foto do adepto Lucas Andrade",
-          "quoteBgAlt": "Fundo estilizado de aspas",
-          "quoteIconAlt": "Ícone de aspas decorativo"
-        },
-        "card2": {
-          "name": "Mariana Costa",
-          "role": "Gestora de Marketing Desportivo",
-          "feedback": "O Up trouxe inovação e emoção ao nosso jogo. Conseguimos envolver milhares de adeptos de uma forma única, sem complicações logísticas e com um impacto visual impressionante.",
-          "altAvatar": "Foto da adepta Mariana Costa",
-          "quoteBgAlt": "Fundo estilizado de aspas",
-          "quoteIconAlt": "Ícone de aspas decorativo"
-        },
-        "card3": {
-          "name": "Ricardo Menezes",
-          "role": "Diretor de Marketing de Marca Parceira",
-          "feedback": "Com o Up conseguimos ligar a nossa marca diretamente à emoção dos adeptos. O alcance e a recordação da marca foram muito superiores a qualquer ação tradicional que já tínhamos feito no estádio.",
-          "altAvatar": "Foto do adepto Ricardo Menezes",
-          "quoteBgAlt": "Fundo estilizado de aspas",
-          "quoteIconAlt": "Ícone de aspas decorativo"
-        }
-      }
-    },
-    "download": {
-      "title": "PRONTO PARA VIVER A EMOÇÃO DOS ADEPTOS DE UMA NOVA FORMA?",
-      "subtitle": "Imagine milhares de adeptos a transformar o estádio num mosaico vivo, todos ligados pela mesma app. Esta é a revolução que estamos a trazer.",
-      "googlePlayAlt": "Disponível no Google Play",
-      "appStoreAlt": "Disponível na App Store"
+      "title": "Pronto para revolucionar a sua empresa?",
+      "subtitle": "Não fique para trás! Adote a tecnologia para otimizar processos, reduzir custos e maximizar os seus lucros. A nossa equipa está pronta para ajudar a sua empresa a crescer!",
+      "btn": "Começar agora"
     }
   },
   "Footer": {
     "newsletter": {
-      "title": "SUBSCREVA E RECEBA O NOSSO CONTEÚDO EXCLUSIVO.",
+      "title": "ASSINE E RECEBA OS NOSSOS CONTEÚDOS EXCLUSIVOS.",
       "placeholder": "Digite o seu email",
       "button": "ENVIAR"
     },
     "contact": {
-      "title": "Contacto"
+      "title": "Contacto",
+      "subtitle": "Ficou com alguma dúvida?"
     },
     "links": {
-      "title": "Links Úteis",
+      "title": "Links Rápidos",
       "home": "Início",
-      "about": "Sobre",
-      "how": "Como Funciona",
-      "benefits": "Benefícios",
-      "feedbacks": "Testemunhos",
-      "contact": "Contacto"
+      "about": "Sobre Nós",
+      "solutions": "Soluções",
+      "domain": "Dominios",
+      "want": "Quero o meu site"
     },
     "social": {
       "title": "Redes Sociais"
     },
-    "rights": "A ligar Adeptos, A Criar Memórias. – Todos os direitos reservados."
+    "rights": "Todos os direitos reservados. - 00.000.000/0000-00"
+  },
+  "About": {
+    "seo": {
+      "title": "Sobre a LetsInove",
+      "description": "Saiba mais sobre a LetsInove"
+    },
+    "title": "Sobre a LetsInove",
+    "description": "Saiba mais sobre a LetsInove",
+    "hero": {
+      "title": "Sobre Nós",
+      "subtitle": "A LetsInove Web Solutions é uma empresa de tecnologia especializada no desenvolvimento de sistemas personalizados e soluções web para otimizar a gestão empresarial.",
+      "subtitle-two": "Combinamos design moderno, usabilidade e segurança para entregar a melhor experiência aos nossos clientes.",
+      "btn": "Falar com um especialista"
+    },
+    "about": {
+      "text-one": "Na LetsInove, a qualidade vem sempre em primeiro lugar – no produto, no atendimento e nos processos. Compreendemos as dores e preocupações dos nossos clientes, especialmente daqueles que já enfrentaram desafios ao trabalhar com empresas que não oferecem o suporte adequado no momento certo.",
+      "text-two": "A nossa equipa está preparada para agir com eficiência em qualquer situação, garantindo tranquilidade e confiança. Além disso, contamos com expertise nas mais avançadas tecnologias do mercado, entregando sempre as melhores soluções para o seu negócio.",
+      "imageAlt": "imagem",
+      "inspirationTitle": "Tem um projeto em mente?",
+      "inspirationText": "Conte connosco! Temos a melhor equipa técnica para ajudar neste novo projeto!",
+      "btn": "Fale connosco"
+    }
+  },
+  "Domain": {
+    "seo": {
+      "title": "Verificar domínio",
+      "description": "Verifique a disponibilidade do seu domínio na LetsInove"
+    },
+    "title": "Verificar domínio",
+    "description": "Verifique a disponibilidade do seu domínio na LetsInove",
+    "hero": {
+      "title": "Verifique a disponibilidade do seu domínio",
+      "subtitle": "Escolher o domínio certo é o primeiro passo para construir a sua presença online. Insira o nome desejado e veja se está disponível para registo. Garanta um endereço exclusivo para o seu site e fortaleça a sua marca no digital!",
+      "placeholder": "Digite o nome do domínio (ex: meusite.com)",
+      "btn": "Verificar Disponibilidade"
+    },
+    "inspiration": {
+      "title": "Pronto para começar o seu projeto?",
+      "text": "Independentemente da disponibilidade do domínio, estamos aqui para ajudar a transformar a sua ideia em realidade. Fale connosco e dê o primeiro passo para o seu sucesso online!",
+      "btn": "Fale connosco"
+    }
   }
 }

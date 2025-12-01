@@ -1,125 +1,89 @@
 {
   "Header": {
     "home": "Home",
-    "about": "About",
-    "how": "How it Works",
-    "benefits": "Benefits",
-    "feedbacks": "Feedbacks",
-    "contact": "Contact",
-    "download": "Download Now",
-    "language": "Language"
+    "about": "About us",
+    "solutions": "Solutions",
+    "domain": "Domains",
+    "mySite": "I want my website"
   },
   "HomePage": {
     "seo": {
-      "title": "Welcome to Up Connections",
-      "description": "Connecting ideas and people for real solutions"
+      "title": "Welcome to LetsInove",
+      "description": "Technology solutions for your company"
     },
-    "title": "Welcome to Up Connections",
-    "description": "Connecting ideas and people into real solutions",
+    "title": "Welcome to LetsInove",
+    "description": "Technology solutions for your company",
     "hero": {
-      "title": "EXPERIENCE THE STADIUM LIKE NEVER BEFORE:",
-      "subtitle": "feel the energy of the crowd.",
-      "cta": "EXPLORE NOW",
-      "call": "Join sports events in a unique way: choose your seat, take part in collective mosaics, and interact with other fans."
+      "title": "Technology Solutions for your company",
+      "subtitle": "In an increasingly competitive market, being prepared is essential. Effective management allows you to optimize time and work, ensuring better results."
     },
     "about": {
-      "title": "ABOUT THE APP:",
-      "text": "Up is a pioneering platform that organizes and enhances the fan experience inside the stadium. More than just watching the game, each fan becomes part of a collective artwork: mosaics that come to life with the light from a flashlight or phone screen, all synchronized in real time.",
-      "imageAlt": "Fan in stadium with mosaic"
+      "title": "Technology and intelligence united to boost your business.",
+      "text": "We are a company specialized in technological solutions, using the most advanced programming languages and tools to create scalable systems tailored to the needs of each project.",
+      "imageAlt": "wire orb",
+      "btn": "I want my system"
     },
     "how": {
-      "title": "HOW IT WORKS:",
-      "subtitle": "Three simple steps to be part of the show",
+      "title": "How does the development work?",
       "steps": {
         "step1": {
-          "title": "1. We detect your presence in the stadium",
-          "description": "Geolocation confirms where you're sitting.",
-          "alt": "Football player icon"
+          "title": "1. Planning and Strategy",
+          "description": "Our specialized team gathers the needs and characteristics of your business to create the ideal solution.",
+          "alt": "Code icon"
         },
         "step2": {
-          "title": "2. We sync your position with the mosaic",
-          "description": "The app calculates exactly when your phone should light up.",
-          "alt": "Geolocation icon"
+          "title": "2. Customized Development",
+          "description": "We create your system from scratch, using modern technologies to ensure security and performance. During this stage, you may request adjustments and improvements.",
+          "alt": "Clipboard icon"
         },
         "step3": {
-          "title": "3. The stands turn into a spectacle",
-          "description": "Each fan helps form the image, team name or collective message.",
-          "alt": "Celebration stars icon"
+          "title": "3. Delivery and Support",
+          "description": "Your system will be delivered with all functionalities and with the possibility of monthly maintenance to evolve according to your needs.",
+          "alt": "Headset icon"
         }
       }
     },
     "benefits": {
-      "title": "BENEFITS AND DIFFERENTIALS:",
-      "subtitle": "Why Up is unique in the sports world",
+      "title": "Do you already have an efficient management system?",
+      "subtitle": "Business management is essential for the growth and success of your company. With LetsInove, you have an intuitive, secure, and accessible system from any device, ensuring full control over your operations.",
       "cards": {
         "card1": {
-          "title": "Automatic and synchronized mosaics",
-          "description": "Everything is organized by the app—no paper, no errors, no hassle.",
-          "alt": "Synchronized mosaic icon"
+          "title": "Integrated Management",
+          "description": "Control sales, inventory, and team in one place.",
+          "alt": "management"
         },
         "card2": {
-          "title": "Geolocation technology",
-          "description": "Each fan is identified in their seat and becomes part of the show.",
-          "alt": "Stadium geolocation icon"
+          "title": "Integrated Management",
+          "description": "Control sales, inventory, and team in one place.",
+          "alt": "management"
         },
         "card3": {
-          "title": "Integrated social network",
-          "description": "Share photos and videos, post moments, and even publish directly to Instagram.",
-          "alt": "Social network icon"
+          "title": "Integrated Management",
+          "description": "Control sales, inventory, and team in one place.",
+          "alt": "management"
         },
         "card4": {
-          "title": "Opportunities for sponsors",
-          "description": "Advertising spaces and exclusive activations inside the app.",
-          "alt": "Marketing icon"
+          "title": "Integrated Management",
+          "description": "Control sales, inventory, and team in one place.",
+          "alt": "management"
         },
         "card5": {
-          "title": "Innovation and pioneering spirit",
-          "description": "The first solution to combine collective experiences, social media, and fan data in one platform.",
-          "alt": "Innovation icon"
+          "title": "Integrated Management",
+          "description": "Control sales, inventory, and team in one place.",
+          "alt": "management"
+        },
+        "card6": {
+          "title": "Integrated Management",
+          "description": "Control sales, inventory, and team in one place.",
+          "alt": "management"
         }
       },
       "cta": "Download Now"
     },
     "inspiration": {
-      "text": "THOUSANDS OF VOICES, ONE LIGHT: THE POWER OF UNITED FANS.",
-      "alt": "Soccer ball icon"
-    },
-    "feedbacks": {
-      "backgroundAlt": "Stadium background",
-      "title": "FEEDBACKS:",
-      "subtitle": "What our users say",
-      "cards": {
-        "card1": {
-          "name": "Lucas Andrade",
-          "role": "Passionate Fan",
-          "feedback": "I never thought my phone could be part of the stadium celebration. When I saw the mosaic taking shape, I felt like I was part of something bigger. It was exciting to take part in this collective experience.",
-          "altAvatar": "Photo of fan Lucas Andrade",
-          "quoteBgAlt": "Stylized quote background",
-          "quoteIconAlt": "Decorative quote icon"
-        },
-        "card2": {
-          "name": "Mariana Costa",
-          "role": "Sports Marketing Manager",
-          "feedback": "Up brought innovation and excitement to our game. We managed to engage thousands of fans in a unique way, with no logistical complications and with an impressive visual impact.",
-          "altAvatar": "Photo of fan Mariana Costa",
-          "quoteBgAlt": "Stylized quote background",
-          "quoteIconAlt": "Decorative quote icon"
-        },
-        "card3": {
-          "name": "Ricardo Menezes",
-          "role": "Partner Brand Marketing Director",
-          "feedback": "With Up we managed to connect our brand directly to the emotion of the crowd. The reach and brand recall were far greater than any traditional action we had ever done in the stadium.",
-          "altAvatar": "Photo of fan Ricardo Menezes",
-          "quoteBgAlt": "Stylized quote background",
-          "quoteIconAlt": "Decorative quote icon"
-        }
-      }
-    },
-    "download": {
-      "title": "READY TO EXPERIENCE FANDOM IN A WHOLE NEW WAY?",
-      "subtitle": "Imagine thousands of fans turning the stadium into a living mosaic, all connected through the same app. This is the revolution we are bringing.",
-      "googlePlayAlt": "Get it on Google Play",
-      "appStoreAlt": "Download on the App Store"
+      "title": "Ready to revolutionize your company?",
+      "subtitle": "Don't fall behind! Embrace technology to optimize processes, reduce costs, and maximize your profits. Our team is ready to help your business grow!",
+      "btn": "Get started now"
     }
   },
   "Footer": {
@@ -129,20 +93,61 @@
       "button": "SEND"
     },
     "contact": {
-      "title": "Contact"
+      "title": "Contact",
+      "subtitle": "Still have any questions?"
     },
     "links": {
-      "title": "Useful Links",
+      "title": "Quick Links",
       "home": "Home",
-      "about": "About",
-      "how": "How It Works",
-      "benefits": "Benefits",
-      "feedbacks": "Feedbacks",
-      "contact": "Contact"
+      "about": "About Us",
+      "solutions": "Solutions",
+      "domain": "Domains",
+      "want": "I want my website"
     },
     "social": {
       "title": "Social Media"
     },
-    "rights": "Connecting Fans, Creating Memories. – All rights reserved."
+    "rights": "All rights reserved. - 00.000.000/0000-00"
+  },
+  "About": {
+    "seo": {
+      "title": "About LetsInove",
+      "description": "Learn more about LetsInove"
+    },
+    "title": "About LetsInove",
+    "description": "Learn more about LetsInove",
+    "hero": {
+      "title": "About Us",
+      "subtitle": "LetsInove Web Solutions is a technology company specialized in the development of customized systems and web solutions to optimize business management.",
+      "subtitle-two": "We combine modern design, usability, and security to deliver the best experience to our clients.",
+      "btn": "Talk to a specialist"
+    },
+    "about": {
+      "text-one": "At LetsInove, quality always comes first — in the product, customer service, and processes. We understand the pains and concerns of our clients, especially those who have faced challenges working with companies that do not provide proper support at the right time.",
+      "text-two": "Our team is prepared to act efficiently in any situation, ensuring peace of mind and confidence. Additionally, we have expertise in the most advanced technologies on the market, always delivering the best solutions for your business.",
+      "imageAlt": "image",
+      "inspirationTitle": "Have a project in mind?",
+      "inspirationText": "Count on us! We have the best technical team to help you with this new project!",
+      "btn": "Contact us"
+    }
+  },
+  "Domain": {
+    "seo": {
+      "title": "Check domain",
+      "description": "Check the availability of your domain at LetsInove"
+    },
+    "title": "Check domain",
+    "description": "Check the availability of your domain at LetsInove",
+    "hero": {
+      "title": "Check the availability of your domain",
+      "subtitle": "Choosing the right domain is the first step to building your online presence. Enter the desired name and see if it is available for registration. Secure a unique address for your website and strengthen your brand in the digital world!",
+      "placeholder": "Enter the domain name (ex: mysite.com)",
+      "btn": "Check Availability"
+    },
+    "inspiration": {
+      "title": "Are you ready to start your project?",
+      "text": "Regardless of domain availability, we are here to help turn your idea into reality. Talk to us and take the first step toward your online success!",
+      "btn": "Contact us"
+    }
   }
 }

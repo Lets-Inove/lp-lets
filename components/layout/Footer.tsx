@@ -1,11 +1,14 @@
 'use client';
 
 import { EnvelopeIcon } from '@heroicons/react/24/outline';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 export default function Footer() {
   const t = useTranslations('Footer');
+  const router = useRouter();
+  const locale = useLocale();
 
   const handleScroll = (id: string) => {
     const offset = -80;
@@ -24,6 +27,14 @@ export default function Footer() {
           behavior: 'smooth',
         });
       }
+    }
+  };
+
+  const handleNavigation = (href: string) => {
+    if (href.startsWith('#')) {
+      handleScroll(href); // scroll para seção
+    } else {
+      router.push(`/${locale}${href}`); // rota com locale
     }
   };
 
@@ -76,27 +87,27 @@ export default function Footer() {
           <h3 className="font-archivo font-bold">{t('links.title')}</h3>
           <ul className="space-y-2">
             <li>
-              <button className="cursor-pointer" onClick={() => handleScroll('#home')}>
+              <button className="cursor-pointer" onClick={() => handleNavigation('/#home')}>
                 {t('links.home')}
               </button>
             </li>
             <li>
-              <button className="cursor-pointer" onClick={() => handleScroll('#about')}>
+              <button className="cursor-pointer" onClick={() => handleNavigation('/about#home')}>
                 {t('links.about')}
               </button>
             </li>
             <li>
-              <button className="cursor-pointer" onClick={() => handleScroll('#solutions')}>
+              <button className="cursor-pointer" onClick={() => handleNavigation('/#solutions')}>
                 {t('links.solutions')}
               </button>
             </li>
             <li>
-              <button className="cursor-pointer" onClick={() => handleScroll('#blog')}>
-                {t('links.blog')}
+              <button className="cursor-pointer" onClick={() => handleNavigation('/domain#home')}>
+                {t('links.domain')}
               </button>
             </li>
             <li>
-              <button className="cursor-pointer" onClick={() => handleScroll('#want')}>
+              <button className="cursor-pointer" onClick={() => console.log('t')}>
                 {t('links.want')}
               </button>
             </li>

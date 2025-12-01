@@ -1,0 +1,65 @@
+'use client';
+
+import Button from '@/components/ui/Button';
+import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+
+export default function InspirationTextDomain() {
+  const t = useTranslations('Domain');
+
+  return (
+    <motion.section
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+      className="relative mt-14 flex w-full items-center justify-center pt-16 pb-44 lg:mt-14"
+    >
+      {/* BG com opacidade só no background */}
+      <div className="absolute inset-0 bg-[url('/images/bg-inspiration.png')] bg-cover bg-top bg-no-repeat opacity-40 grayscale"></div>
+
+      {/* CONTEÚDO */}
+      <div className="relative z-10 flex w-full flex-col items-center justify-center space-y-16 px-6">
+        {/* Banner animado */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
+          style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+        >
+          <div className="border-violet-normal relative bottom-24 flex max-h-[280px] w-4/5 max-w-[1142px] items-center justify-center overflow-hidden rounded-4xl border shadow-[0_0_12px_#D72BD9]">
+            <Image src="/images/bg-card-domain.png" width={2048} height={2048} alt="icon" />
+          </div>
+        </motion.div>
+
+        {/* Texto + botão */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.35, ease: 'easeOut' }}
+          className="flex w-full max-w-[1440px] flex-col items-center justify-center gap-10 text-center"
+        >
+          <h2 className="font-open-sans text-4xl leading-tight font-semibold sm:text-5xl lg:text-6xl">
+            {t('inspiration.title')}
+          </h2>
+
+          <p className="font-open-sans max-w-[1109px] text-lg font-semibold sm:text-xl">
+            {t('inspiration.text')}
+          </p>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, delay: 0.45, ease: 'easeOut' }}
+          >
+            <Button text={t('inspiration.btn')} />
+          </motion.div>
+        </motion.div>
+      </div>
+    </motion.section>
+  );
+}

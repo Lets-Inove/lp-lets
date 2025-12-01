@@ -1,148 +1,153 @@
 {
   "Header": {
     "home": "Inicio",
-    "about": "Acerca de",
-    "how": "Cómo funciona",
-    "benefits": "Beneficios",
-    "feedbacks": "Reseñas",
-    "contact": "Contacto",
-    "download": "Descargar ahora",
-    "language": "Idioma"
+    "about": "Sobre nosotros",
+    "solutions": "Soluciones",
+    "domain": "Dominio",
+    "mySite": "quiero mi sistema"
   },
   "HomePage": {
     "seo": {
-      "title": "Bienvenido a Up Connections",
-      "description": "Conectando ideas y personas para soluciones reales"
+      "title": "Bienvenido a LetsInove",
+      "description": "Soluciones tecnológicas para tu empresa"
     },
-    "title": "Bienvenido a Up Connections",
-    "description": "Conectando ideas y personas para crear soluciones reales",
+    "title": "Bienvenido a LetsInove",
+    "description": "Soluciones tecnológicas para tu empresa",
     "hero": {
-      "title": "VIVE EL ESTADIO COMO NUNCA ANTES:",
-      "subtitle": "siente la pasión de la hinchada.",
-      "cta": "DESCÚBRELO",
-      "call": "Participa en los eventos deportivos de una forma única: elige tu asiento, forma parte de mosaicos colectivos e interactúa con otros aficionados."
+      "title": "Soluciones Tecnológicas para tu Empresa",
+      "subtitle": "En un mercado cada vez más competitivo, es esencial estar preparado. Una gestión eficaz permite optimizar tiempo y trabajo, garantizando mejores resultados."
     },
     "about": {
-      "title": "SOBRE LA APP:",
-      "text": "Up es una plataforma pionera que organiza y potencia la experiencia de los aficionados en el estadio. Más que ver el partido, cada hincha se convierte en parte de una obra colectiva: mosaicos que cobran vida con la luz del móvil, todo sincronizado en tiempo real.",
-      "imageAlt": "Hincha en el estadio con mosaico"
+      "title": "Tecnología e inteligencia unidas para potenciar tu negocio.",
+      "text": "Somos una empresa especializada en soluciones tecnológicas, utilizando los lenguajes y herramientas de programación más avanzados para crear sistemas escalables y adaptados a las necesidades de cada proyecto.",
+      "imageAlt": "orbe de cables",
+      "btn": "quiero mi sistema"
     },
     "how": {
-      "title": "CÓMO FUNCIONA:",
-      "subtitle": "Tres pasos sencillos para ser parte del espectáculo",
+      "title": "¿Cómo funciona el desarrollo?",
       "steps": {
         "step1": {
-          "title": "1. Detectamos tu presencia en el estadio",
-          "description": "La geolocalización confirma dónde estás sentado.",
-          "alt": "Ícono jugador de fútbol"
+          "title": "1. Planificación y Estrategia",
+          "description": "Nuestro equipo especializado recopila las necesidades y características de tu negocio para crear la solución ideal.",
+          "alt": "Icono de código"
         },
         "step2": {
-          "title": "2. Sincronizamos tu posición con el mosaico",
-          "description": "La app calcula el momento exacto en que tu móvil debe encenderse.",
-          "alt": "Ícono de geolocalización"
+          "title": "2. Desarrollo Personalizado",
+          "description": "Creamos tu sistema a medida, utilizando tecnologías modernas para garantizar seguridad y rendimiento. Durante esta etapa puedes solicitar ajustes y mejoras.",
+          "alt": "Icono de portapapeles"
         },
         "step3": {
-          "title": "3. Las gradas se convierten en un show",
-          "description": "Cada aficionado ayuda a formar la imagen, el nombre del equipo o el mensaje colectivo.",
-          "alt": "Ícono de estrellas"
+          "title": "3. Entrega y Soporte",
+          "description": "Tu sistema será entregado con todas las funcionalidades y con la posibilidad de mantenimiento mensual para evolucionar según tus necesidades.",
+          "alt": "Icono de auriculares"
         }
       }
     },
     "benefits": {
-      "title": "BENEFICIOS Y VENTAJAS:",
-      "subtitle": "Por qué Up es único en el mundo deportivo",
+      "title": "¿Ya tienes un sistema de gestión eficiente?",
+      "subtitle": "La gestión empresarial es fundamental para el crecimiento y éxito de tu negocio. Con LetsInove tienes un sistema intuitivo, seguro y accesible desde cualquier dispositivo, garantizando control total sobre tus operaciones.",
       "cards": {
         "card1": {
-          "title": "Mosaicos automáticos y sincronizados",
-          "description": "Todo organizado por la app, sin papel, sin errores y sin complicaciones.",
-          "alt": "Ícono mosaico sincronizado"
+          "title": "Gestión Integrada",
+          "description": "Control de ventas, stock y equipo en un solo lugar.",
+          "alt": "gestión"
         },
         "card2": {
-          "title": "Tecnología de geolocalización",
-          "description": "Cada hincha se identifica en su asiento y forma parte del show.",
-          "alt": "Ícono geolocalización estadio"
+          "title": "Gestión Integrada",
+          "description": "Control de ventas, stock y equipo en un solo lugar.",
+          "alt": "gestión"
         },
         "card3": {
-          "title": "Red social integrada",
-          "description": "Comparte fotos y videos, publica momentos e incluso directo en Instagram.",
-          "alt": "Ícono red social"
+          "title": "Gestión Integrada",
+          "description": "Control de ventas, stock y equipo en un solo lugar.",
+          "alt": "gestión"
         },
         "card4": {
-          "title": "Oportunidades para patrocinadores",
-          "description": "Espacios publicitarios y activaciones exclusivas dentro de la app.",
-          "alt": "Ícono marketing"
+          "title": "Gestión Integrada",
+          "description": "Control de ventas, stock y equipo en un solo lugar.",
+          "alt": "gestión"
         },
         "card5": {
-          "title": "Innovación y espíritu pionero",
-          "description": "La primera solución que une experiencias colectivas, redes sociales y datos de hinchas en una sola plataforma.",
-          "alt": "Ícono innovación"
+          "title": "Gestión Integrada",
+          "description": "Control de ventas, stock y equipo en un solo lugar.",
+          "alt": "gestión"
+        },
+        "card6": {
+          "title": "Gestión Integrada",
+          "description": "Control de ventas, stock y equipo en un solo lugar.",
+          "alt": "gestión"
         }
       },
-      "cta": "Descargar ahora"
+      "cta": "Descargar Ahora"
     },
     "inspiration": {
-      "text": "MILES DE VOCES, UNA SOLA LUZ: LA FUERZA DE LA HINCHADA UNIDA.",
-      "alt": "Ícono balón de fútbol"
-    },
-    "feedbacks": {
-      "backgroundAlt": "Fondo del estadio",
-      "title": "RESEÑAS:",
-      "subtitle": "Lo que dicen nuestros usuarios",
-      "cards": {
-        "card1": {
-          "name": "Lucas Andrade",
-          "role": "Hincha apasionado",
-          "feedback": "Nunca pensé que mi móvil pudiera ser parte de la fiesta en el estadio. Cuando vi el mosaico tomando forma, sentí que era parte de algo más grande. Fue emocionante vivir esta experiencia colectiva.",
-          "altAvatar": "Foto de Lucas Andrade",
-          "quoteBgAlt": "Fondo de comillas estilizado",
-          "quoteIconAlt": "Ícono decorativo de comillas"
-        },
-        "card2": {
-          "name": "Mariana Costa",
-          "role": "Gerente de marketing deportivo",
-          "feedback": "Up trajo innovación y emoción a nuestro partido. Logramos involucrar a miles de hinchas de una manera única, sin complicaciones logísticas y con un impacto visual increíble.",
-          "altAvatar": "Foto de Mariana Costa",
-          "quoteBgAlt": "Fondo de comillas estilizado",
-          "quoteIconAlt": "Ícono decorativo de comillas"
-        },
-        "card3": {
-          "name": "Ricardo Menezes",
-          "role": "Director de marketing de marca",
-          "feedback": "Con Up logramos conectar nuestra marca directamente con la emoción de la hinchada. El alcance y el recuerdo de marca superaron cualquier acción tradicional en el estadio.",
-          "altAvatar": "Foto de Ricardo Menezes",
-          "quoteBgAlt": "Fondo de comillas estilizado",
-          "quoteIconAlt": "Ícono decorativo de comillas"
-        }
-      }
-    },
-    "download": {
-      "title": "¿LISTO PARA VIVIR LA HINCHADA DE UNA NUEVA MANERA?",
-      "subtitle": "Imagina miles de aficionados transformando el estadio en un mosaico vivo, todos conectados por la misma app. Esta es la revolución que traemos.",
-      "googlePlayAlt": "Disponible en Google Play",
-      "appStoreAlt": "Disponible en App Store"
+      "title": "¿Listo para revolucionar tu empresa?",
+      "subtitle": "¡No te quedes atrás! Adopta la tecnología para optimizar procesos, reducir costes y maximizar tus beneficios. ¡Nuestro equipo está listo para ayudarte a crecer!",
+      "btn": "Comenzar ahora"
     }
   },
   "Footer": {
     "newsletter": {
-      "title": "SUSCRÍBETE Y RECIBE CONTENIDO EXCLUSIVO.",
-      "placeholder": "Escribe tu correo",
+      "title": "SUSCRÍBETE Y RECIBE NUESTROS CONTENIDOS EXCLUSIVOS.",
+      "placeholder": "Introduce tu email",
       "button": "ENVIAR"
     },
     "contact": {
-      "title": "Contacto"
+      "title": "Contacto",
+      "subtitle": "¿Tienes alguna duda?"
     },
     "links": {
-      "title": "Enlaces útiles",
+      "title": "Enlaces Rápidos",
       "home": "Inicio",
-      "about": "Acerca de",
-      "how": "Cómo funciona",
-      "benefits": "Beneficios",
-      "feedbacks": "Reseñas",
-      "contact": "Contacto"
+      "about": "Sobre Nosotros",
+      "solutions": "Soluciones",
+      "domain": "Dominios",
+      "want": "Quiero mi sitio web"
     },
     "social": {
-      "title": "Redes sociales"
+      "title": "Redes Sociales"
     },
-    "rights": "Conectando hinchas, creando recuerdos. – Todos los derechos reservados."
+    "rights": "Todos los derechos reservados. - 00.000.000/0000-00"
+  },
+  "About": {
+    "seo": {
+      "title": "Sobre LetsInove",
+      "description": "Conoce más sobre LetsInove"
+    },
+    "title": "Sobre LetsInove",
+    "description": "Conoce más sobre LetsInove",
+    "hero": {
+      "title": "Sobre Nosotros",
+      "subtitle": "LetsInove Web Solutions es una empresa de tecnología especializada en el desarrollo de sistemas personalizados y soluciones web para optimizar la gestión empresarial.",
+      "subtitle-two": "Combinamos diseño moderno, usabilidad y seguridad para ofrecer la mejor experiencia a nuestros clientes.",
+      "btn": "Hablar con un especialista"
+    },
+    "about": {
+      "text-one": "En LetsInove, la calidad siempre viene primero: en el producto, en la atención y en los procesos. Comprendemos las preocupaciones de nuestros clientes, especialmente aquellos que ya han tenido experiencias negativas con empresas que no brindan soporte adecuado.",
+      "text-two": "Nuestro equipo está preparado para actuar con eficiencia en cualquier situación, garantizando tranquilidad y confianza. Además, contamos con experiencia en las tecnologías más avanzadas del mercado, ofreciendo siempre las mejores soluciones para tu negocio.",
+      "imageAlt": "imagen",
+      "inspirationTitle": "¿Tienes un proyecto en mente?",
+      "inspirationText": "¡Cuenta con nosotros! Tenemos el mejor equipo técnico para ayudarte en este nuevo proyecto.",
+      "btn": "Hablar con nosotros"
+    }
+  },
+  "Domain": {
+    "seo": {
+      "title": "Verificar dominio",
+      "description": "Comprueba la disponibilidad de tu dominio en LetsInove"
+    },
+    "title": "Verificar dominio",
+    "description": "Comprueba la disponibilidad de tu dominio en LetsInove",
+    "hero": {
+      "title": "Comprueba la disponibilidad de tu dominio",
+      "subtitle": "Elegir el dominio correcto es el primer paso para construir tu presencia online. Introduce el nombre deseado y verifica si está disponible para registro. ¡Asegura una dirección exclusiva para tu sitio web y fortalece tu marca digital!",
+      "placeholder": "Introduce el dominio (ej: misitio.com)",
+      "btn": "Verificar Disponibilidad"
+    },
+    "inspiration": {
+      "title": "¿Listo para iniciar tu proyecto?",
+      "text": "Independientemente de la disponibilidad del dominio, estamos aquí para ayudarte a transformar tu idea en realidad. ¡Habla con nosotros y da el primer paso hacia tu éxito online!",
+      "btn": "Hablar con nosotros"
+    }
   }
 }

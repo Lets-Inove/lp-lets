@@ -7,10 +7,10 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 
 const navItems = [
-  { key: 'home', href: '#home' },
-  { key: 'about', href: '#about' },
-  { key: 'solutions', href: '#solutions' },
-  { key: 'blog', href: '#blog' },
+  { key: 'home', href: '/' },
+  { key: 'about', href: '/about' },
+  { key: 'solutions', href: '/#solutions' },
+  { key: 'domain', href: '/domain' },
 ];
 
 const languages = [
@@ -34,10 +34,32 @@ export default function Header() {
   const currentLang = languages.find((l) => l.code === locale) || languages[0];
 
   const handleLanguageChange = (newLocale: string) => {
-    const parts = pathname.split('/').filter(Boolean);
-    parts[0] = newLocale;
-    router.push('/' + parts.join('/'));
+    const path = pathname || '';
+    const segments = path.split('/').filter(Boolean);
+
+    console.log('caiu aqui:', newLocale);
+
+    // Se NÃO existe locale no path, adiciona
+    if (!languages.some((l) => l.code === segments[0])) {
+      router.push(`/${newLocale}${path}`);
+      setLangOpen(false);
+      return;
+    }
+
+    // Se já existe locale no path, troca
+    segments[0] = newLocale;
+    router.push('/' + segments.join('/'));
+
     setLangOpen(false);
+  };
+
+  const handleNavigation = (href: string) => {
+    if (href.startsWith('#')) {
+      handleScroll(href); // scroll para seção
+    } else {
+      router.push(`/${locale}${href}`); // rota com locale
+    }
+    setIsOpen(false);
   };
 
   const handleScroll = (id: string) => {
@@ -83,7 +105,7 @@ export default function Header() {
           {navItems.map((item) => (
             <button
               key={item.key}
-              onClick={() => handleScroll(item.href)}
+              onClick={() => handleNavigation(item.href)}
               className="font-archivo text-lg text-white transition hover:text-gray-300"
             >
               {t(item.key)}
@@ -91,7 +113,7 @@ export default function Header() {
           ))}
 
           <button className="bg-violet-normal hover:bg-violet-normal-hover cursor-pointer rounded-full px-4 py-2 transition duration-300 hover:scale-110">
-            Quero meu site
+            {t('mySite')}
           </button>
 
           {/* Language selector */}
@@ -104,12 +126,12 @@ export default function Header() {
             </button>
 
             {langOpen && (
-              <div className="absolute right-0 mt-2 w-40 rounded-md bg-white p-2 shadow-md">
+              <div className="absolute right-0 z-20 mt-2 w-40 rounded-md bg-black p-2 shadow-md">
                 {languages.map((lang) => (
                   <button
                     key={lang.code}
-                    onClick={() => handleLanguageChange(lang.code)}
-                    className="flex w-full items-center gap-2 p-2 text-left hover:bg-gray-100"
+                    onClick={() => console.log('brn')}
+                    className="hover:bg-violet-dark flex w-full items-center gap-2 p-2 text-left"
                   >
                     <Image src={lang.flag} width={20} height={14} alt={lang.label} />
                     {lang.label}
@@ -139,7 +161,7 @@ export default function Header() {
           {navItems.map((item) => (
             <button
               key={item.key}
-              onClick={() => handleScroll(item.href)}
+              onClick={() => handleNavigation(item.href)}
               className="text-xl font-light hover:text-gray-300"
             >
               {t(item.key)}
@@ -151,14 +173,14 @@ export default function Header() {
           </button>
 
           {/* Idiomas mobile */}
-          <div className="border-t border-gray-700 pt-4" ref={langRef}>
+          <div className="z-20 border-t border-gray-700 pt-4" ref={langRef}>
             <button onClick={() => setLangOpen((v) => !v)} className="flex items-center gap-3">
               <Image src={currentLang.flag} width={24} height={16} alt="" />
               <span>{currentLang.label}</span>
             </button>
 
             {langOpen && (
-              <div className="mt-3 flex flex-col gap-3">
+              <div className="z-20 mt-3 flex flex-col gap-3 bg-black">
                 {languages.map((lang) => (
                   <button
                     key={lang.code}

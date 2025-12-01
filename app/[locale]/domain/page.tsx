@@ -1,6 +1,6 @@
 import { generateSeoMetadata } from '@/components/SeoMetaData';
-import About from '@/components/aboutSections/About/About';
-import HeroBannerAbout from '@/components/aboutSections/HeroBannerAbout/HeroBannerAbout';
+import HeroBannerDomain from '@/components/domainSections/HeroBannerDomain/HeroBannerDomain';
+import InspirationTextDomain from '@/components/domainSections/InspirationTextDomain/InspirationTextDomain';
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
 import { getTranslations } from 'next-intl/server';
@@ -10,12 +10,12 @@ export const generateMetadata = async ({ params }: { params: Promise<{ locale: s
 
   return generateSeoMetadata({
     locale,
-    namespace: 'About',
+    namespace: 'Domain',
   });
 };
 
-export default async function AboutPage() {
-  const t = await getTranslations('About');
+export default async function DomainPage() {
+  const t = await getTranslations('Domain');
 
   return (
     <>
@@ -23,11 +23,11 @@ export default async function AboutPage() {
 
       <main>
         <section id="home">
-          <HeroBannerAbout />
+          <HeroBannerDomain />
         </section>
 
         <section id="about">
-          <About />
+          <InspirationTextDomain />
         </section>
       </main>
 
