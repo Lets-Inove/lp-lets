@@ -42,14 +42,6 @@ export default async function HomePage() {
         <section id="inspiration">
           <InspirationText />
         </section>
-
-        {/* <section id="feedbacks">
-          <Feedback />
-        </section>
-
-        <section id="download">
-          <DownloadBanner />
-        </section> */}
       </main>
 
       <footer id="contact">
