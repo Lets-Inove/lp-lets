@@ -29,7 +29,7 @@ export default function Header() {
   const locale = useLocale();
 
   const langRef = useRef<HTMLDivElement>(null);
-  const mobileRef = useRef<HTMLDivElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   const currentLang = languages.find((l) => l.code === locale) || languages[0];
 
@@ -37,27 +37,22 @@ export default function Header() {
     const path = pathname || '';
     const segments = path.split('/').filter(Boolean);
 
-    console.log('caiu aqui:', newLocale);
-
-    // Se NÃO existe locale no path, adiciona
     if (!languages.some((l) => l.code === segments[0])) {
       router.push(`/${newLocale}${path}`);
-      setLangOpen(false);
-      return;
+    } else {
+      segments[0] = newLocale;
+      router.push('/' + segments.join('/'));
     }
 
-    // Se já existe locale no path, troca
-    segments[0] = newLocale;
-    router.push('/' + segments.join('/'));
-
     setLangOpen(false);
+    setIsOpen(false);
   };
 
   const handleNavigation = (href: string) => {
     if (href.startsWith('#')) {
-      handleScroll(href); // scroll para seção
+      handleScroll(href);
     } else {
-      router.push(`/${locale}${href}`); // rota com locale
+      router.push(`/${locale}${href}`);
     }
     setIsOpen(false);
   };
@@ -67,23 +62,20 @@ export default function Header() {
     const el = document.querySelector(id);
     const lenis = (window as any).lenis;
 
-    if (el) {
-      const top = el.getBoundingClientRect().top + window.scrollY + offset;
+    if (!el) return;
 
-      if (lenis) lenis.scrollTo(top);
-      else window.scrollTo({ top, behavior: 'smooth' });
+    const top = el.getBoundingClientRect().top + window.scrollY + offset;
 
-      setIsOpen(false); // Fecha menu mobile ao clicar
-    }
+    if (lenis) lenis.scrollTo(top);
+    else window.scrollTo({ top, behavior: 'smooth' });
+
+    setIsOpen(false);
   };
 
-  // Fecha dropdown e mobile ao clicar fora
+  // Fecha menu lateral ao clicar fora
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (langRef.current && !langRef.current.contains(e.target as Node)) {
-        setLangOpen(false);
-      }
-      if (mobileRef.current && !mobileRef.current.contains(e.target as Node)) {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
         setIsOpen(false);
       }
     };
@@ -117,7 +109,7 @@ export default function Header() {
           </button>
 
           {/* Language selector */}
-          <div className="relative" ref={langRef}>
+          <div className="relative">
             <button
               onClick={() => setLangOpen((v) => !v)}
               className="flex items-center gap-2 text-white"
@@ -126,12 +118,12 @@ export default function Header() {
             </button>
 
             {langOpen && (
-              <div className="absolute right-0 z-20 mt-2 w-40 rounded-md bg-black p-2 shadow-md">
+              <div className="absolute right-0 z-10 mt-2 w-40 rounded-md bg-black p-2 shadow-md">
                 {languages.map((lang) => (
                   <button
                     key={lang.code}
-                    onClick={() => console.log('brn')}
-                    className="hover:bg-violet-dark flex w-full items-center gap-2 p-2 text-left"
+                    onClick={() => handleLanguageChange(lang.code)}
+                    className="hover:bg-violet-dark z-20 flex w-full cursor-pointer items-center gap-2 p-2 text-left"
                   >
                     <Image src={lang.flag} width={20} height={14} alt={lang.label} />
                     {lang.label}
@@ -150,14 +142,20 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* BACKDROP */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-40 bg-black/50 lg:hidden"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+
+      {/* SIDE MENU */}
       <div
-        ref={mobileRef}
-        className={`overflow-hidden bg-black text-white transition-all duration-300 lg:hidden ${
-          isOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
-        }`}
+        ref={menuRef}
+        className={`fixed top-0 right-0 z-50 h-full w-72 bg-black text-white shadow-xl transition-transform duration-300 lg:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
-        <div className="flex flex-col space-y-6 p-6">
+        <div className="mt-6 flex flex-col space-y-6 p-6">
           {navItems.map((item) => (
             <button
               key={item.key}
@@ -169,18 +167,18 @@ export default function Header() {
           ))}
 
           <button className="bg-violet-normal hover:bg-violet-normal-hover rounded-full px-4 py-2 transition">
-            Quero meu site
+            {t('mySite')}
           </button>
 
           {/* Idiomas mobile */}
-          <div className="z-20 border-t border-gray-700 pt-4" ref={langRef}>
+          <div className="border-t border-gray-700 pt-4" ref={langRef}>
             <button onClick={() => setLangOpen((v) => !v)} className="flex items-center gap-3">
               <Image src={currentLang.flag} width={24} height={16} alt="" />
               <span>{currentLang.label}</span>
             </button>
 
             {langOpen && (
-              <div className="z-20 mt-3 flex flex-col gap-3 bg-black">
+              <div className="mt-3 flex flex-col gap-3 bg-black">
                 {languages.map((lang) => (
                   <button
                     key={lang.code}
