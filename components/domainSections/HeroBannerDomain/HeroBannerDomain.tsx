@@ -4,18 +4,48 @@ import Button from '@/components/ui/Button';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 export default function HeroBannerDomain() {
   const t = useTranslations('Domain');
   const sectionRef = useRef<HTMLDivElement>(null);
+
+  const [domain, setDomain] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState<null | 'available' | 'taken'>(null);
+
+  // Função para verificar domínio via DNS Google
+  const checkDomain = async () => {
+    if (!domain) return;
+
+    setLoading(true);
+    setResult(null);
+
+    try {
+      const res = await fetch(`https://dns.google/resolve?name=${domain}&type=A`);
+      const data = await res.json();
+
+      // DNS status:
+      // Status: 3 → NXDOMAIN → normalmente disponível
+      // Answer: Existe → domínio já registrado
+      if (data.Status === 3 || !data.Answer) {
+        setResult('available');
+      } else {
+        setResult('taken');
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <section
       ref={sectionRef}
       className="relative flex min-h-svh w-full flex-col justify-center overflow-hidden text-white"
     >
-      {/* Vídeo de fundo */}
+      {/* Video / imagem de fundo */}
       <div className="absolute inset-0 -z-10">
         <Image
           src={'/images/bg-circles.png'}
@@ -25,8 +55,6 @@ export default function HeroBannerDomain() {
           alt="img"
         />
       </div>
-
-      {/* Partículas */}
 
       {/* Conteúdo */}
       <div className="container mx-auto flex flex-wrap justify-between py-20 md:flex-row md:items-center md:py-0">
@@ -49,6 +77,7 @@ export default function HeroBannerDomain() {
             {t('hero.subtitle')}
           </motion.p>
 
+          {/* Input */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -58,12 +87,22 @@ export default function HeroBannerDomain() {
           >
             <input
               type="text"
-              className="bg-violet-dark-hover mt-4 h-12 w-full rounded-xl p-3 font-semibold"
+              className="bg-violet-dark-hover mt-4 h-12 w-full rounded-xl p-3 font-semibold text-white focus:ring-0 focus:outline-0"
               placeholder={t('hero.placeholder')}
-              // onClick={() => alert('Clicou!')}
+              value={domain}
+              onChange={(e) => setDomain(e.target.value)}
             />
+
+            {/* Resultado */}
+            {result === 'available' && (
+              <p className="text-lg font-semibold text-green-400">✅ Domínio disponível!</p>
+            )}
+            {result === 'taken' && (
+              <p className="text-lg font-semibold text-red-400">❌ Domínio indisponível.</p>
+            )}
           </motion.div>
 
+          {/* Botão */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -72,19 +111,13 @@ export default function HeroBannerDomain() {
             className="flex flex-1 flex-col items-center gap-6 text-center md:items-start md:text-left"
           >
             <Button
-              text={t('hero.btn')}
+              text={loading ? 'Verificando...' : t('hero.btn')}
               className="mt-4 max-w-[280px] cursor-pointer"
-              onClick={() => alert('Clicou!')}
+              onClick={checkDomain}
+              disabled={loading}
             />
           </motion.div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 1, duration: 0.8 }}
-          className="hidden items-center justify-center md:flex"
-        ></motion.div>
       </div>
     </section>
   );
