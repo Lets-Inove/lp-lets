@@ -120,7 +120,11 @@ export default function HeroBanner() {
             <Button
               text={t('hero.btn')}
               className="mt-4 max-w-[280px] cursor-pointer"
-              onClick={() => alert('Clicou!')}
+              onClick={() =>
+                window.open(
+                  'https://wa.me/5545999587883?text=Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os.'
+                )
+              }
             />
           </motion.div>
         </div>

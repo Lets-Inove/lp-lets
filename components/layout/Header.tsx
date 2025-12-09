@@ -104,7 +104,14 @@ export default function Header() {
             </button>
           ))}
 
-          <button className="bg-violet-normal hover:bg-violet-normal-hover cursor-pointer rounded-full px-4 py-2 transition duration-300 hover:scale-110">
+          <button
+            onClick={() =>
+              window.open(
+                'https://wa.me/5545999587883?text=Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os.'
+              )
+            }
+            className="bg-violet-normal hover:bg-violet-normal-hover cursor-pointer rounded-full px-4 py-2 transition duration-300 hover:scale-110"
+          >
             {t('mySite')}
           </button>
 
@@ -166,7 +173,14 @@ export default function Header() {
             </button>
           ))}
 
-          <button className="bg-violet-normal hover:bg-violet-normal-hover rounded-full px-4 py-2 transition">
+          <button
+            onClick={() =>
+              window.open(
+                'https://wa.me/5545999587883?text=Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os.'
+              )
+            }
+            className="bg-violet-normal hover:bg-violet-normal-hover rounded-full px-4 py-2 transition"
+          >
             {t('mySite')}
           </button>
 

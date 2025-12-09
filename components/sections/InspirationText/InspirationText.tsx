@@ -54,7 +54,14 @@ export default function InspirationText() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7, delay: 0.45, ease: 'easeOut' }}
           >
-            <Button text={t('btn')} />
+            <Button
+              text={t('btn')}
+              onClick={() =>
+                window.open(
+                  'https://wa.me/5545999587883?text=Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os.'
+                )
+              }
+            />
           </motion.div>
         </motion.div>
       </div>

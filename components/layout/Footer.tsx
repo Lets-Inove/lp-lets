@@ -71,7 +71,7 @@ export default function Footer() {
                 className="opacity-90"
               />
               <a
-                href="https://wa.me/351920406913"
+                href="https://wa.me/5545999587883?text=Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline"
@@ -128,7 +128,10 @@ export default function Footer() {
                 className="md:h-12 md:w-12"
               />
             </li>
-            <li>
+            <li
+              className="cursor-pointer"
+              onClick={() => window.open('https://www.instagram.com/letsinove/')}
+            >
               <Image
                 src="/svg/instagram-icon.svg"
                 alt="Instagram"
