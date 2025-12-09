@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { useTranslations } from "next-intl";
-import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function DownloadBanner() {
-  const t = useTranslations("HomePage.download");
+  const t = useTranslations('HomePage.download');
 
   return (
     <section className="relative w-full bg-[url('/images/crowd-bg.png')] bg-cover bg-center py-52">
@@ -21,7 +21,7 @@ export default function DownloadBanner() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          {t("title")}
+          {t('title')}
         </motion.h2>
 
         {/* Subtítulo */}
@@ -32,7 +32,7 @@ export default function DownloadBanner() {
           transition={{ duration: 0.7, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          {t("subtitle")}
+          {t('subtitle')}
         </motion.p>
 
         {/* Botões de download */}
@@ -46,13 +46,13 @@ export default function DownloadBanner() {
           <Link href="https://play.google.com" target="_blank" rel="noopener noreferrer">
             <Image
               src="/images/googleplay-icon.png"
-              alt={t("googlePlayAlt")}
+              alt={t('googlePlayAlt')}
               width={180}
               height={54}
             />
           </Link>
           <Link href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
-            <Image src="/images/appstore-icon.png" alt={t("appStoreAlt")} width={180} height={54} />
+            <Image src="/images/appstore-icon.png" alt={t('appStoreAlt')} width={180} height={54} />
           </Link>
         </motion.div>
       </div>
