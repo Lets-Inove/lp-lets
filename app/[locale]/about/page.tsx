@@ -3,7 +3,6 @@ import About from '@/components/aboutSections/About/About';
 import HeroBannerAbout from '@/components/aboutSections/HeroBannerAbout/HeroBannerAbout';
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
-import { getTranslations } from 'next-intl/server';
 
 export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }) => {
   const { locale } = await params;
@@ -15,7 +14,7 @@ export const generateMetadata = async ({ params }: { params: Promise<{ locale: s
 };
 
 export default async function AboutPage() {
-  const t = await getTranslations('About');
+  // const t = await getTranslations('About');
 
   return (
     <>

@@ -3,7 +3,6 @@ import HeroBannerDomain from '@/components/domainSections/HeroBannerDomain/HeroB
 import InspirationTextDomain from '@/components/domainSections/InspirationTextDomain/InspirationTextDomain';
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
-import { getTranslations } from 'next-intl/server';
 
 export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }) => {
   const { locale } = await params;
@@ -15,7 +14,7 @@ export const generateMetadata = async ({ params }: { params: Promise<{ locale: s
 };
 
 export default async function DomainPage() {
-  const t = await getTranslations('Domain');
+  // const t = await getTranslations('Domain');
 
   return (
     <>

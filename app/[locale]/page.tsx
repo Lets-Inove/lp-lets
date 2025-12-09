@@ -6,7 +6,6 @@ import Benefits from '@/components/sections/Benefits.tsx/Benefits';
 import HeroBanner from '@/components/sections/HeroBanner/HeroBanner';
 import HowWorks from '@/components/sections/HowWorks/HowWorks';
 import InspirationText from '@/components/sections/InspirationText/InspirationText';
-import { getTranslations } from 'next-intl/server';
 
 export const generateMetadata = async ({ params }: { params: Promise<{ locale: string }> }) => {
   const { locale } = await params;
@@ -18,7 +17,7 @@ export const generateMetadata = async ({ params }: { params: Promise<{ locale: s
 };
 
 export default async function HomePage() {
-  const t = await getTranslations('HomePage');
+  // const t = await getTranslations('HomePage');
 
   return (
     <>

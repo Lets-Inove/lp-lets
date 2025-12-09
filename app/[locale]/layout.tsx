@@ -26,6 +26,7 @@ export default async function RootLayout({ children, params }: Props) {
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
   } catch (error) {
+    console.log(error);
     notFound();
   }
 
