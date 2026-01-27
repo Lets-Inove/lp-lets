@@ -11,7 +11,7 @@ interface SquareCardProps {
 
 export default function SquareCard({ iconSrc, iconAlt, title, description }: SquareCardProps) {
   return (
-    <div className="relative flex h-full max-h-[400px] max-w-[400px] flex-col justify-start rounded-md bg-[#19161C] px-6 py-10 text-white transition-all hover:shadow-[0_0_20px_#D72BD9]">
+    <div className="relative flex h-full w-full max-w-none flex-col justify-start rounded-md bg-[#19161C] px-6 py-10 text-white transition-all hover:shadow-[0_0_20px_#D72BD9] min-h-[320px] md:min-h-[360px] md:max-w-[400px]">
       {/* Glow border effect */}
       <div className="absolute inset-0 rounded-md border border-[#D72BD9]/30 shadow-[0_0_15px_#D72BD9]/20"></div>
 
@@ -23,8 +23,10 @@ export default function SquareCard({ iconSrc, iconAlt, title, description }: Squ
           </div>
         </div>
 
-        <h3 className="font-open-sans text-2xl font-semibold md:text-4xl">{title}</h3>
-        <p className="font-open-sans mt-2 text-base text-white md:text-2xl">{description}</p>
+        <h3 className="font-open-sans text-xl font-semibold md:text-2xl lg:text-3xl">{title}</h3>
+        <p className="font-open-sans mt-2 text-sm text-white md:text-base lg:text-lg">
+          {description}
+        </p>
       </div>
     </div>
   );

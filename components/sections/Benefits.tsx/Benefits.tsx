@@ -144,13 +144,13 @@ export default function Benefits() {
         <div className="container">
           <div
             ref={sliderRef}
-            className="keen-slider grid grid-cols-1 gap-1 md:grid-cols-2 xl:grid-cols-3"
+            className="keen-slider md:grid md:grid-cols-2 md:gap-6 xl:grid-cols-3"
           >
             {cards.map((card, idx) =>
               isDesktop ? (
                 <motion.div
                   key={idx}
-                  className="keen-slider__slide flex items-center justify-center px-2 py-10 md:!transform-none"
+                  className="keen-slider__slide flex items-stretch justify-center px-2 py-10 md:!transform-none"
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: idx * 0.2 }}
@@ -164,7 +164,10 @@ export default function Benefits() {
                   />
                 </motion.div>
               ) : (
-                <div key={idx} className="keen-slider__slide px-2 py-10 md:!transform-none">
+                <div
+                  key={idx}
+                  className="keen-slider__slide flex items-stretch px-2 py-8 md:!transform-none"
+                >
                   <SquareCard
                     iconSrc={card.src}
                     iconAlt={card.alt}

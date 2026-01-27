@@ -48,34 +48,34 @@
       "subtitle": "A gestão empresarial é fundamental para o crescimento e sucesso do seu negócio. Com a LetsInove, você tem um sistema intuitivo, seguro e acessível de qualquer dispositivo, garantindo controle total sobre suas operações.",
       "cards": {
         "card1": {
-          "title": "Gestão Integrada",
-          "description": "Controle de vendas, estoque e equipe em um só lugar.",
-          "alt": "gestao"
+          "title": "Sistemas sob medida",
+          "description": "Desenvolvemos solucoes alinhadas ao seu processo, do cadastro ao relatorio.",
+          "alt": "sistema"
         },
         "card2": {
-          "title": "Gestão Integrada",
-          "description": "Controle de vendas, estoque e equipe em um só lugar.",
-          "alt": "gestao"
+          "title": "Sites e landing pages",
+          "description": "Design moderno, responsivo e focado em conversao para sua marca.",
+          "alt": "site"
         },
         "card3": {
-          "title": "Gestão Integrada",
-          "description": "Controle de vendas, estoque e equipe em um só lugar.",
-          "alt": "gestao"
+          "title": "Integracoes inteligentes",
+          "description": "Conectamos meios de pagamento, ERPs, CRMs e APIs que voce ja usa.",
+          "alt": "integracao"
         },
         "card4": {
-          "title": "Gestão Integrada",
-          "description": "Controle de vendas, estoque e equipe em um só lugar.",
-          "alt": "gestao"
+          "title": "Automacao de processos",
+          "description": "Reduza tarefas manuais com fluxos automatizados e paineis claros.",
+          "alt": "automacao"
         },
         "card5": {
-          "title": "Gestão Integrada",
-          "description": "Controle de vendas, estoque e equipe em um só lugar.",
-          "alt": "gestao"
+          "title": "Seguranca e confiabilidade",
+          "description": "Boas praticas, backups e controle de acesso para proteger seus dados.",
+          "alt": "seguranca"
         },
         "card6": {
-          "title": "Gestão Integrada",
-          "description": "Controle de vendas, estoque e equipe em um só lugar.",
-          "alt": "gestao"
+          "title": "Suporte continuo",
+          "description": "Acompanhamento pos-entrega, melhorias e manutencao mensal quando precisar.",
+          "alt": "suporte"
         }
       },
       "cta": "Baixar Agora"

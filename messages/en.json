@@ -48,34 +48,34 @@
       "subtitle": "Business management is essential for the growth and success of your company. With LetsInove, you have an intuitive, secure, and accessible system from any device, ensuring full control over your operations.",
       "cards": {
         "card1": {
-          "title": "Integrated Management",
-          "description": "Control sales, inventory, and team in one place.",
-          "alt": "management"
+          "title": "Custom systems",
+          "description": "We build solutions aligned to your workflow, from onboarding to reports.",
+          "alt": "system"
         },
         "card2": {
-          "title": "Integrated Management",
-          "description": "Control sales, inventory, and team in one place.",
-          "alt": "management"
+          "title": "Websites and landing pages",
+          "description": "Modern, responsive design focused on conversion for your brand.",
+          "alt": "website"
         },
         "card3": {
-          "title": "Integrated Management",
-          "description": "Control sales, inventory, and team in one place.",
-          "alt": "management"
+          "title": "Smart integrations",
+          "description": "Connect payments, ERPs, CRMs, and the APIs you already use.",
+          "alt": "integration"
         },
         "card4": {
-          "title": "Integrated Management",
-          "description": "Control sales, inventory, and team in one place.",
-          "alt": "management"
+          "title": "Process automation",
+          "description": "Reduce manual work with automated flows and clear dashboards.",
+          "alt": "automation"
         },
         "card5": {
-          "title": "Integrated Management",
-          "description": "Control sales, inventory, and team in one place.",
-          "alt": "management"
+          "title": "Security and reliability",
+          "description": "Best practices, backups, and access control to protect your data.",
+          "alt": "security"
         },
         "card6": {
-          "title": "Integrated Management",
-          "description": "Control sales, inventory, and team in one place.",
-          "alt": "management"
+          "title": "Ongoing support",
+          "description": "Post-launch follow-up, improvements, and monthly maintenance when needed.",
+          "alt": "support"
         }
       },
       "cta": "Download Now"

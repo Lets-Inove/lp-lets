@@ -48,34 +48,34 @@
       "subtitle": "A gestão empresarial é fundamental para o crescimento e sucesso do seu negócio. Com a LetsInove, tem um sistema intuitivo, seguro e acessível a partir de qualquer dispositivo, garantindo controlo total sobre as suas operações.",
       "cards": {
         "card1": {
-          "title": "Gestão Integrada",
-          "description": "Controlo de vendas, stock e equipa num só lugar.",
-          "alt": "gestao"
+          "title": "Sistemas a medida",
+          "description": "Criamos solucoes alinhadas ao seu processo, do registo ao relatorio.",
+          "alt": "sistema"
         },
         "card2": {
-          "title": "Gestão Integrada",
-          "description": "Controlo de vendas, stock e equipa num só lugar.",
-          "alt": "gestao"
+          "title": "Sites e landing pages",
+          "description": "Design moderno, responsivo e focado em conversao para a sua marca.",
+          "alt": "site"
         },
         "card3": {
-          "title": "Gestão Integrada",
-          "description": "Controlo de vendas, stock e equipa num só lugar.",
-          "alt": "gestao"
+          "title": "Integracoes inteligentes",
+          "description": "Ligamos pagamentos, ERPs, CRMs e APIs que ja utiliza.",
+          "alt": "integracao"
         },
         "card4": {
-          "title": "Gestão Integrada",
-          "description": "Controlo de vendas, stock e equipa num só lugar.",
-          "alt": "gestao"
+          "title": "Automatizacao de processos",
+          "description": "Reduza tarefas manuais com fluxos automatizados e paineis claros.",
+          "alt": "automatizacao"
         },
         "card5": {
-          "title": "Gestão Integrada",
-          "description": "Controlo de vendas, stock e equipa num só lugar.",
-          "alt": "gestao"
+          "title": "Seguranca e fiabilidade",
+          "description": "Boas praticas, backups e controlo de acesso para proteger os seus dados.",
+          "alt": "seguranca"
         },
         "card6": {
-          "title": "Gestão Integrada",
-          "description": "Controlo de vendas, stock e equipa num só lugar.",
-          "alt": "gestao"
+          "title": "Suporte continuo",
+          "description": "Acompanhamento pos-entrega, melhorias e manutencao mensal quando precisar.",
+          "alt": "suporte"
         }
       },
       "cta": "Descarregar Agora"
